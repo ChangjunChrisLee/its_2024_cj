@@ -1,0 +1,1396 @@
+---
+# title: ""
+# subtitle: ""
+# author: ""
+bibliography: bib/cj_refer.bib
+format: 
+  revealjs:
+    theme: ["theme/q-theme.scss"]
+    slide-number: c/t
+    logo: "img/HYU_logo_singlecolor_png.png"
+    # footer: "2023 봄철 3학회 공동 학술대회"
+    code-copy: true
+    center-title-slide: false
+    code-link: true
+    code-overflow: wrap
+    highlight-style: a11y
+    height: 1080
+    width: 1920
+    # smaller: true
+    # scrollable: true
+# server: shiny
+execute: 
+  eval: true
+  echo: true
+  freeze: true
+editor: 
+  markdown: 
+    wrap: 75
+---
+
+<br>
+
+<h2>`DT` Start-up Ecosystem</h2>
+
+<h2>Exploratory analysis of key factors of `Attract Investment`</h2>
+
+<hr>
+
+<br>
+
+<h5>2024 24th Biennial International Telecommunications Society</h5>
+
+2024-06-25
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<h3>Changjun Lee ^1^, Kyungsun Lee ^2^, Yuri Park ^3^</h3>
+
+<h5>^1^ School of Convergence. Sungkyunkwan University</h5>
+
+<h5>^2,3^ Korea Information Society Development Institute</h5>
+
+## What is Digital Transformation?
+
+<hr>
+
+> **DT (Digital Transformation)** is the application of digital technology
+> to all areas of business.
+
+-   These fundamental changes will change how we operate our business and
+    deliver value to our customers. It forces us to fundamentally rethink
+    our methods.
+
+-   This is not a simple technological change, but rather an organization
+    that continuously challenges the status quo. A cultural shift that
+    requires experimentation and getting comfortable with failure.
+
+-   Fundamental paradigm shift from traditional business methods and
+    processes
+
+<br>
+
+![](img/dt_concept.jpg){fig-align="center" width="800"}
+
+## Motivation
+
+<hr>
+
+-   Unlike manufacturing, where various technologies are integrated and
+    digitalization is progressing rapidly, [**Digital transformation in the
+    service industry progresses slowly**]{.underline}
+
+    -   South Korea’s service industry has a structural problem of low
+        productivity and small-sized scale. The problem is that it is
+        somewhat far from technological innovation.
+
+-   However, due to COVID-19, **digital transformation has emerged as a
+    matter of survival, not a choice**, and various DT attempts are
+    underway in the service industry, starting with some fields and some
+    companies.
+
+    -   **Technology-based companies emerge and digitalization progresses**
+        to apply digital technology in various service fields (Musinsa,
+        Masspresso (Qanda), Bucket Place (Today's House), etc.)
+
+    -   With the integration of digital technology, data is collected and
+        accumulated, service methods are changing and new possibilities are
+        opening up.
+
+-   In order to utilize the digital transformation as our opportunity,
+    **research is needed to diagnose and promote the digital transformation
+    of the service industry**
+
+    -   Since DT is a field where a lot of [innovation through new business
+        models within the startup ecosystem]{.underline} occurs, [analysis
+        of startup ecosystem dynamics is needed]{.underline}
+
+## Why is DT Industry Classification Difficult?
+
+<hr>
+
+1.  **Various degrees of digital maturity**
+
+    -   Different industries, and even businesses within the same industry,
+        exist at different stages of digital maturity (e.g. finance,
+        manufacturing, retail, healthcare, etc.)
+    -   A one-size-fits-all classification system is likely to misrepresent
+        these variations.
+
+2.  **Rapid advancement in technology**
+
+    -   The digital environment is changing rapidly (recent AI wave)
+
+    -   Technological innovations continue to change the nature and scope
+        of digital transformation, rapidly obsolete fixed classification
+        systems.
+
+## Why is DT Industry Classification Difficult? (Cont.)
+
+<hr>
+
+1.  **Other DT approaches**
+
+    -   Even companies in the same industry may have greatly different
+        approaches to DT.
+
+    -   e.g.) Greater emphasis on face-to-face services in finance,
+        introduction of AI to improve customer experience **vs.**
+        Innovation in payment systems or asset management methods through
+        introduction of blockchain
+
+2.  **Unique Business Model**
+
+    -   Digital innovation continues to create new and unique business
+        models that defy traditional industry classifications (mutation).
+
+    -   e.g.) Mobility (or Housing) sharing
+
+## Research Goal
+
+<hr>
+
+<br>
+
+-   **Development of a frame for digital transformation ecosystem
+    analysis**
+
+    -   **Industry:** Digital transformation industry classification
+
+    -   **Technology convergence:** Analysis of digital transformation
+        business model and technology convergence trends
+
+    -   **Organization:** Analysis of organizational dynamics of digital
+        transformation companies
+
+<br>
+
+-   Development of **investment attraction prediction model** using **three
+    frames** of **industry, technology convergence, and organization**
+
+    -   Comparison of investment attraction prediction models and
+        performance evaluation
+
+    -   Exploring key factors influencing investment attraction in the
+        digital transformation ecosystem
+
+## Data comes from
+
+<hr>
+
+### Innvation Forest([www.innoforest.co.kr](https://www.innoforest.co.kr/)), 혁신의숲
+
+![](images/clipboard-1843129210.png)
+
+## Data comes from (for example)
+
+<hr>
+
+![](img/inn_for_2.png){fig-align="center"}
+
+## About data {.scrollable}
+
+<hr>
+
+-   Innvation Forest([www.innoforest.co.kr](https://www.innoforest.co.kr/))
+
+    -   Provides a service that provides information to investors and
+        consumers by analyzing the businesses and technologies of digital
+        innovation startups
+
+    -   The American model ([dealroom.co](https://dealroom.co))
+
+    -   Receive data on **4,709** companies (May 2022) and conduct analysis
+
+<br>
+
+-   List of information provided in Innovation Forest DB
+
+|                                  |                                                                                                                                                                                                                                                                                                                                                   |
+|--------------------|-----------------------------------------------------------------------------------|
+| **Vars**                         | **Provided information**                                                                                                                                                                                                                                                                                                                          |
+| `Company Decription`             | Company unique ID, company name, representative name, business registration number, business address, category, Classification of corporate attributes, corporate description, recent investment history, highest investment stage, total investment amount, date of incorporation, corporate homepage URL, domestic listed market classification |
+| `Service`                        | service unique ID, company name, service name                                                                                                                                                                                                                                                                                                     |
+| `Consumer Transaction Amount`    | Consumer transaction standard month, consumer transaction amount, number of consumer transactions                                                                                                                                                                                                                                                 |
+| `Repurchase rate`                | repurchase cycle classification, repurchase rate                                                                                                                                                                                                                                                                                                  |
+| `Average number of purchases`    | consumer transaction standard month, average purchase cycle, number of purchases                                                                                                                                                                                                                                                                  |
+| `Transactions by gender and age` | gender classification, age classification, transaction share                                                                                                                                                                                                                                                                                      |
+| `Traffic`                        | service unique ID, service name, traffic standard month                                                                                                                                                                                                                                                                                           |
+| `Social`                         | buzz start date, buzz volume, SRS                                                                                                                                                                                                                                                                                                                 |
+| `Investment attraction history`  | Investment attraction history ID, company unique ID, company name, investment stage, participating investors, Investment date, investment amount                                                                                                                                                                                                  |
+| `Patent`                         | Everything about patents...                                                                                                                                                                                                                                                                                                                       |
+| `Tech keywords`                  | technology keyword, keyword mention volume                                                                                                                                                                                                                                                                                                        |
+| `Profit/Loss/Finance`            | settlement type classification, settlement target classification, settlement date, settlement figures                                                                                                                                                                                                                                             |
+| `Organization`                   | Employment start date, employees hired, employees quit, total number of employees                                                                                                                                                                                                                                                                 |
+
+## Business category distribution
+
+<hr>
+
+![](img/cat_tree.png){fig-align="center"}
+
+## Business tag distribution
+
+<hr>
+
+-   e.g) Class101 (Online-based hobby\|Edu class platform)
+
+![](img/tag_eg.png){fig-align="center"}
+
+## Business tag distribution
+
+<hr>
+
+![](img/tab_tree.png){fig-align="center"}
+
+## Cumulative investment amount
+
+<hr>
+
+-   Distribution of cumulative investment amount attracted by InnoForest DB
+    (unit: KRW 100 million)
+
+    -   Before removing outliers on the left, after removing outliers on
+        the right
+
+    -   Digital transformation companies mainly received investments
+        between 5 and 4 billion, with an average cumulative investment of
+        about 1.5 billion.
+
+```{r}
+#| echo: false
+#| output-location: slide
+#| layout: [40, -10, 40]
+#| fig-height: 9
+
+
+load("data/corp.RData")
+ven_cap <- corp$누적투자유치금액/100000000 
+boxplot(ven_cap)
+# boxplot(ven_cap)$stats
+boxplot(ven_cap[ven_cap>0 & ven_cap<100])
+```
+
+## **Framework for digital transformation ecosystem analysis**
+
+<hr>
+
+<br>
+
+<br>
+
+<br>
+
+### 1. **`Industry`:** Digital transformation industry classification
+
+<br>
+
+### 2. `Technology business convergence`: Analysis of convergence trends of digital transformation business model and technology
+
+<br>
+
+### 3. `Organization`: Analysis of organizational dynamics of digital transformation companies
+
+## Digital transformation ‘industry’ classification
+
+<hr>
+
+**Topic modelling**
+
+> A kind of [statistical modeling]{.underline} to discover abstract
+> ["topics"]{.underline} that occur in a collection of documents.
+
+<br>
+
+**LDA** (Latent Dirichlet Allocation)
+
+> LDA is a generative probability model that assumes that each chunk of
+> text (e.g. a document or sentence) is a mixture of a specific set of
+> topics and that each word in a document is attributed to one of the
+> topics in the document.
+
+## Digital transformation ‘industry’ classification
+
+<hr>
+
+**DT ecosystem industry classification using topic modeling**
+
+-   Topic modeling is used to classify industries within a digital
+    ecosystem where business models and technologies are integrated.
+
+-   Assumptions of topic modeling: A document exists as a distribution of
+    multiple topics, and a topic exists as a distribution of multiple
+    sentences (words).
+
+    -   Document: Company
+
+    -   Sentence (word): Sentence (word, keyword) that describes the
+        company
+
+    -   Topic: Industry
+
+## Topic modeling (LDA details) {.scrollable}
+
+<hr>
+
+The LDA model aims to find:
+
+-   **Document to Topic distributions**: How likely each topic is for each
+    document.
+
+-   **Topic to Word distributions**: How likely each word is for each
+    topic.
+
+<br>
+
+Mathematically, these distributions can be represented as follows:
+
+-   **Document to Topic distribution**: For each document $d$, there's a
+    multinomial distribution over topics $θ_d$.
+
+$$
+θ_d \sim Dirichlet(α)
+$$
+
+> Here, $α$ is a K-dimensional vector, where K is the number of topics.
+
+$$
+θ_d \sim \beta_1 Topic_1 + \beta_2 Topic_2 + ... + \beta_k Topic_k
+$$
+
+<br>
+
+-   **Topic to Word distribution**: For each topic $k$, there's a
+    multinomial distribution over words $β_k$.
+
+$$
+β_k \sim Dirichlet(δ)
+$$
+
+> Here, $δ$ is a W-dimensional vector, where W is the number of words in
+> the vocabulary.
+
+$$
+β_k \sim \gamma_1 Word_1 + \gamma_2 Word_2 + ...+ \gamma_k Word_k
+$$
+
+<br>
+
+Given these distributions, each word $w_{di}$ in each document $d$ is
+generated in the following way:
+
+-   Choose a topic $z_{di}$ from the document's multinomial distribution of
+    topics.
+
+$$
+z_{di} \sim Multinomial(θ_d)
+$$
+
+<br>
+
+-   Choose a word from the topic's multinomial distribution of words.
+
+$$
+w_{di} \sim Multinomial(β_{z_{di}})
+$$
+
+<br>
+
+The goal is to learn the hidden topic structure $θ_d$ and $β_k$ that likely
+generated the observed collection of documents.
+
+## Developing DT ecosystem industry using ‘topic modeling’ {.scrollable}
+
+<hr>
+
+-   Perform LDA using company descriptions in the data
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(tidyverse)
+load("data/corp.RData")
+knitr::kable(corp %>% 
+               select(기업명, 기업설명) %>% 
+               head(20))
+  
+  
+```
+
+## Classification of DT ecosystem industries using ‘topic modeling’
+
+<hr>
+
+-   Text preprocessing process, such as removing special characters,
+    unifying capital letters, and extracting nouns.
+
+-   Determine the optimal number of topics: `k = 20`
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-align: center
+
+# 2. 최적 토픽 수 정하기
+library(ldatuning)
+load("data/LDA_model_saved.RData")
+FindTopicsNumber_plot(models)
+```
+
+-   LDA model results estimating beta and gamma values ​​with 20 topics
+
+    -   Beta: Word (keyword) probability by topic (industry)
+
+    -   gamma: Topic (industry) probability by document (company)
+
+## Classification of DT ecosystem industries using ‘topic modeling’
+
+<hr>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig.width: 10
+#| fig.height: 5
+#| fig.dpi: 400
+#| fig-align: center
+
+library(tidyverse)
+library(tidytext)
+library(stringr)
+library(textclean)
+library(scales)
+
+load("data/top_term_topic.RData")
+g1 <- ggplot(top_term_topic,
+       aes(x = reorder_within(term, beta, topic),
+           y = beta,
+           fill = factor(topic))) +
+  geom_col(show.legend = F) +
+  facet_wrap(~ topic, scales = "free", ncol = 7) +
+  coord_flip() +
+  scale_x_reordered() +
+  scale_y_continuous(n.breaks = 4,
+                     labels = number_format(accuracy = .01)) +
+  labs(x = NULL) 
+
+g1
+
+```
+
+## ‘Keywords’ by DT ecosystem industry
+
+<hr>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig.width: 10
+#| fig.height: 5
+#| fig.dpi: 400
+#| fig-align: center
+
+load("data/count_topic_word.RData")
+ggplot(count_topic_word,
+       aes(x = reorder(topic_name, n),
+           y = n,
+           fill = topic_name)) +
+  geom_col(show.legend = F) +
+  coord_flip() +
+  geom_text(aes(label = n) , # 문서 빈도 표시
+            hjust = -0.2) + # 막대 밖에 표시
+  geom_text(aes(label = term), # 주요 단어 표시
+            hjust = 1.03, # 막대 안에 표시
+            col = "white", # 색깔
+            fontface = "bold", # 두껍게
+            family = "nanumgothic") + # 폰트
+  scale_y_continuous(expand = c(0, 0), # y축-막대 간격 줄이기
+                     limits = c(0, 510)) + # y축 범위
+  labs(x = NULL) + ylab("")
+```
+
+## DT ecosystem industry-specific ‘keywords’ {.scrollable}
+
+<hr>
+
+-   Detailed company description of topic 16 (industry) Contents: Gamma
+    Sort in descending order
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+load("data/corp_topic_arr.RData")
+
+knitr::kable(
+  corp_topic_arr %>%
+    filter(topic == 16) %>%
+    head(20) %>%
+    select(기업명, 기업설명)
+)
+```
+
+## DT ecosystem industry-specific ‘keywords’ {.scrollable}
+
+<hr>
+
+-   Detailed company description of topic 20 (industry) Contents: Gamma
+    Sort in descending order
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+load("data/corp_topic_arr.RData")
+
+knitr::kable(
+  corp_topic_arr %>%
+    filter(topic == 20) %>%
+    head(20) %>%
+    select(기업명, 기업설명)
+)
+```
+
+## Derive titles by industry {.scrollable}
+
+<hr>
+
+-   Utilize OpenAI’s `chatGPT 4.0` (use prompt below, automate)
+
+-   Select the most appropriate industry name among the candidates and
+    revise it under the supervision of the researcher.
+
+***Prompt template***
+
+> Summarize the detailed descriptions of the representative companies below
+> into the names of the industries they represent. - At this time, create
+> an industry name using industry-specific keywords X1, X2, X3, .., X10. -
+> Make 5 industry name candidates. - Details of 30 representative
+> Explanation lists
+
+**Derive final industry names**
+
+::: callout-note
+## Industry Name
+
+1\. Healthcare, food, cosmetics commerce and technology services industries
+
+2\. Immunity and incurable disease treatment industry using new drug
+development and digital technology
+
+3\. Sales and electrical infrastructure industry using smart manufacturing
+technology and artificial intelligence
+
+4\. Smart software and location-based accommodation and travel service
+brokerage industry
+
+5\. Wearable and pharmaceutical-based brand commerce and sales industry
+
+6\. Online payment, commerce and autonomous driving technology industry
+
+7\. Big data analysis and security-based business solution industry
+
+8\. Artificial intelligence and IOT-based education and distribution
+content system industry
+
+9\. Digital content and information system industry focused on fashion,
+beauty and health
+
+10\. IT and e-commerce consulting industry for global information and data
+management
+
+11\. Digital-based online and offline communities and marketing support
+industry
+
+12\. Vehicle management, robotics technology, diagnostic product
+manufacturing and media industries
+
+13\. Meta-education, shopping and supply management, English home service
+industry
+
+14\. Comparison-purchase commerce centered on online sharing and
+collaboration
+
+15\. Digital e-commerce, pet care, IOT manufacturing, and real estate
+brokerage startup industries
+
+16\. Customized media and space planning industry using mobile games and VR
+
+17\. Brand product distribution and software design industry focusing on
+non-face-to-face training and reservation services
+
+18\. Blockchain-based virtual asset management and integrated trading
+community industry
+
+19\. Eco-friendly technology industry through professional manufacturing
+and supply
+
+20\. Content production and video streaming industry through various media
+:::
+
+## Companies by Industry {.scrollable}
+
+<hr>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 16
+#| fig-height: 8
+#| fig-dpi: 400
+#| fig-align: center
+
+
+library(ggwordcloud)
+
+corp_topic_arr %>% 
+  select(기업명, gamma, topic_lab) %>% 
+  group_by(topic_lab) %>% 
+  slice_max(gamma, n = 10) %>% 
+  ggplot(aes(label = 기업명, size = gamma)) +
+  geom_text_wordcloud(seed = 1234) +
+  scale_radius(limits = c(0.01, 1), 
+               range = c(3, 30)) +
+  facet_wrap(~ topic_lab, scales = "free", ncol = 7) 
+  
+    
+```
+
+## Buzz by industry
+
+<hr>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 10
+#| fig-height: 5
+#| fig-dpi: 400
+#| fig-align: center
+
+
+load("data/buzz_topic.RData")
+buzz_topic %>% 
+  filter(!is.na(topic_lab)) %>% 
+  filter(buzz_vol < 100000) %>% 
+  group_by(topic_lab) %>% 
+  summarize(avg_buzz = mean(buzz_vol)) %>% 
+  arrange(-avg_buzz) %>% 
+  ggplot(aes(x = reorder(topic_lab, avg_buzz),
+             y = avg_buzz,
+             fill = topic_lab)) +
+  geom_col(show.legend = F) +
+  coord_flip() +
+  geom_text(aes(label = round(avg_buzz,0)) , # 문서 빈도 표시
+            hjust = -0.2) +
+  scale_y_continuous(expand = c(0, 0), # y축-막대 간격 줄이기
+                     limits = c(0, 900)) + # y축 범위
+  labs(x = NULL) +
+  ylab("평균 버즈량")
+```
+
+## Investment stage distribution by industry {.scrollable}
+
+<hr>
+
+-   Investment timing, investment round, and investment field are different
+    for each VC.
+
+-   When money flows in (investment occurs), a new market is formed and
+    grows together.
+
+-   We want to look at the timing of investment in order to predict what
+    new market will be formed in the future.
+
+-   Investments at the SEED (\~300 million) and Pre-A (5\~1 billion) stages
+    are at the stage of growing the market.
+
+## Investment stage distribution by industry {.scrollable}
+
+<hr>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-width: 16
+#| fig-height: 8
+#| fig-dpi: 400
+#| fig-align: center
+
+load("data/corp_topic_cat.RData")
+corp_topic_cat %>% 
+  group_by(topic_lab) %>% 
+  count(vc_status) %>% 
+  filter(!is.na(vc_status)) %>% 
+  filter(vc_status != "C+") %>% 
+  ggplot(aes(x = reorder_within(topic_lab, n, vc_status), 
+             y = n)) +
+  geom_col(aes(fill = vc_status)) +
+  facet_wrap(~ vc_status, scales = "free", ncol = 2) +
+  coord_flip() +
+  scale_x_reordered() +
+  scale_y_continuous(n.breaks = 4,
+                     labels = number_format(accuracy = .01)) +
+  labs(x = NULL) + ylab("")
+```
+
+## Industrial ecosystem ‘Tech-BM’ convergence analysis through knowledge structure analysis
+
+<hr>
+
+### knowledge Structure
+
+-   Knowledge structures represent the organization and distribution of
+    knowledge within different economic activities and **geographic
+    locations**
+
+-   Involves understanding how knowledge is created, shared and utilized
+    across different sectors of the economy and how it is influenced by
+    spatial factors.
+
+-   Examines spatial patterns of knowledge production, innovation and
+    diffusion, considering factors such as proximity, connectivity and
+    accessibility
+
+-   Knowledge clusters or innovation hubs emerge in specific geographic
+    areas where knowledge-intensive activities are concentrated, such as
+    technology parks or research centers.
+
+-   Knowledge spillover occurs when knowledge created in one location or
+    industry spills over to benefit another location or industry, leading
+    to an agglomeration effect.
+
+-   The geography of knowledge is influenced by factors such as investment
+    in research and development (R&D), educational institutions,
+    availability of skilled labor and infrastructure.
+
+-   Local and regional knowledge assets, including human capital, social
+    networks and institutions, play an important role in attracting and
+    sustaining knowledge-based industries.
+
+-   The spatial composition of knowledge also affects regional disparities,
+    as regions with higher knowledge intensity tend to experience greater
+    economic development and innovation than regions with lower knowledge
+    intensity.
+
+## Knowledge Space
+
+<hr>
+
+![](img/node_edge.png){fig-align="center"}
+
+## Knowledge Space
+
+<hr>
+
+![](img/tech_evo.png){fig-align="center"}
+
+## Industrial ecosystem `Tech-BM` convergence analysis through knowledge structure analysis
+
+<hr>
+
+> Knowledge Structure = Tag Structure
+>
+> Tag components: Business Model, Categories, Technologies
+
+<br>
+
+### Business Model: Business Tag
+
+> TAG: Business, product, service, market keywords, etc.
+
+<br>
+
+### TEchnology: Tech Tag
+
+> TAG: Technology, specialty area keywords, etc.
+
+<br>
+
+## Tag structure analysis by industry
+
+<hr>
+
+> Tag portfolio of companies in the industry
+
+<hr>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+library(treemapify)
+load("data/tag_df.RData")
+
+corp_topic_arr %>% 
+  select(topic, topic_lab) %>% 
+  filter(!is.na(topic)) %>% 
+  unique %>% 
+  arrange(topic) -> topic_table
+
+df <- corp_topic_arr %>% 
+  left_join(tag_df) %>% 
+  select(topic, contains("tag")) 
+  
+tag_by_topic <- function(topic_input){
+  
+  df %>% 
+    filter(topic == topic_input) %>%
+    select(-topic) %>% 
+    as.matrix %>% 
+    table %>% 
+    as.data.frame %>% 
+    arrange(desc(Freq)) %>% 
+    .[-1,] %>% 
+    setNames(c("Tag", "Freq")) %>% 
+    head(50) %>% 
+    ggplot( aes(area = Freq, fill = Freq, label=Tag)) +
+    geom_treemap()+
+    geom_treemap_text(colour = "white",
+                      place = "centre",
+                      size = 15,
+                      grow = TRUE) +
+    ggtitle(paste(topic_table$topic_lab[topic_input]))
+}
+
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-align: center
+
+tag_by_topic(1)
+
+```
+
+## Tag structure analysis by industry
+
+<hr>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-align: center
+
+tag_by_topic(2)
+
+```
+
+## Tag structure analysis by industry
+
+<hr>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| fig-align: center
+
+tag_by_topic(3)
+
+```
+
+## Edge area of knowledge structure: `Biz-Tech` space
+
+<hr>
+
+![](img/total_net.png){fig-align="center"}
+
+## Edge area of knowledge structure: `Biz-Tech` space
+
+<hr>
+
+<iframe src="net_viz/total_tag_network.html" frameborder="0" width="160%" height="1000" scrolling="no" allowfullscreen>
+
+</iframe>
+
+## `Biz-Tech` space by industry
+
+<hr>
+
+**Immunity and incurable disease treatment industry using new drug
+development and digital technology**
+
+<iframe src="net_viz/topic_2_tag_network.html" frameborder="0" width="160%" height="1000" scrolling="no" allowfullscreen>
+
+</iframe>
+
+## `Biz-Tech` space by industry
+
+<hr>
+
+**Digital content and information system industry focused on fashion,
+beauty and health**
+
+<iframe src="net_viz/topic_9_tag_network.html" frameborder="0" width="160%" height="1000" scrolling="no" allowfullscreen>
+
+</iframe>
+
+## Connection, weighted connection, mediation, power, and closeness centrality in `Biz-Tech` space {.scrollable}
+
+<hr>
+
+-   **Degree**: The number of other nodes in a graph to which a node is
+    directly connected: can indirectly indicate the importance of that node
+    in the graph
+
+-   **Weighted Degree**: In a weighted graph, the weighted connection of a
+    node represents the sum of the weights of connected edges: the degree
+    of connection of a node considering the 'strength' or 'importance' of
+    the edge.
+
+-   **Betweenness Centrality**: Indicates how often they appear on the
+    shortest path between all pairs of nodes in the graph: nodes with high
+    betweenness centrality act as 'bridges' in the flow of information
+
+-   **Eigenvector Centrality**: The power centrality of a node takes into
+    account the importance of other nodes directly connected to that node:
+    nodes that are more connected to important nodes have higher power
+    centrality.
+
+-   **Closeness Centrality**: The closeness centrality of a node indicates
+    how 'close' it is to all other nodes in the graph: where 'closer'
+    refers to the path length between nodes, i.e. the shorter the distance
+    between nodes, the higher the closeness centrality. .
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+#Centrality
+library(data.table)
+get_centralities<-function(Graph.object){
+  
+  Net<-Graph.object
+  output<-data.frame(
+    Deg=degree(Net),
+    w.Deg=strength(Net),
+    Btw=betweenness(Net, normalized = T),
+    Eig=eigen_centrality(Net)$vector,
+    Close=closeness(Net)
+  )
+  setDT(output, keep.rownames = TRUE)[]
+  colnames(output)[1]<-"Id"
+  return(output)
+}
+
+
+data_to_adj_mat <- function(df){
+  
+  df %>% 
+    reshape2::melt(id="corp_id") %>% 
+    arrange(corp_id) %>% 
+    filter(!is.na(value)) %>% 
+    filter(value!="") %>% 
+    reshape2::dcast(corp_id ~ value) -> df_wide
+  
+  temp<-df_wide[c(-1)]
+  temp[is.na(temp)]<-0
+  temp[temp!=0]<-1
+  
+  temp.mat <- as.matrix(temp)
+  temp.mat <- apply(temp.mat, 2, as.numeric)
+  
+  adj.mat <- t(temp.mat) %*% temp.mat
+  return(adj.mat)
+  
+  
+}
+```
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(igraph)
+
+tag_df %>% 
+  rename(corp_id=CORP_ID) %>% 
+  data_to_adj_mat %>% 
+  graph_from_adjacency_matrix(.,mode = "undirected", 
+                                weighted=T, 
+                                diag = F) -> g
+
+vertex_attr(g)$label<-vertex_attr(g)$name
+
+g %>% get_centralities -> tag_centrality
+tag_centrality
+```
+
+## Tag’s position in the digital transformation technology space
+
+<hr>
+
+![](img/deg_btw.png){fig-align="center"}
+
+## Investment Attraction Prediction Model
+
+<hr>
+
+![](images/clipboard-2711767886.png)
+
+## Investment Attraction Prediction Model {.scrollable}
+
+<hr>
+
+-   Utilizing investment attraction data for four years from 2019 to 2022
+
+    -   ***Phase 1:*** 2019 \~ 2020 as a **Train** data set
+
+    -   ***Phase 2:*** 2021 \~ 2022 as a **Test** data set
+
+-   Predictor: Investment attraction dummy variable for company i at time t
+
+-   **Invest Forecasting Model**
+
+$$
+Invested_{i,t} = f(Industry_{i}, BizTech_{i}, Org_{i,t})
+$$
+
+> *i* and *j* refers to each firm and each period
+
+$$
+Industry_{i} = \sum_{j=1}^k \beta_i \gamma_i
+$$
+
+> *k* is the number of topics (industries). k = 20 in this study.
+
+$$
+BizTech_{i} = \beta_1 Deg_{i}+\beta_2 w.Deg_{i}+ \beta_3 Btw_{i} + \beta_4 Eig_{i} + \beta_5 Close_{i}
+$$
+
+$$
+Deg_{i} = \frac{1}{l} \sum_{j=1}^l Deg_{i,j}
+$$
+
+> *j* refers to each tag in firm *i* and *l* is the number of tags in firm
+> *i*
+
+$$
+Org_{i,t}=\beta_1 emp_{i,t} + \beta_2 InRatio_{i,t} + \beta_3 OutRatio_{i,t} + \beta_4 LogOddsRatio_{i,t} 
+$$
+
+$$
+LogOddsRatio_{i,t} = ln(\frac{InRatio_{i,t}}{OutRatio_{i,t}})
+$$
+
+## Investment Attraction Prediction Model
+
+<hr>
+
+-   **Competing Models:** SVM, Random Forest, Ada-boost
+
+    -   Explanable ML (Opt out NN and etc.)
+
+-   **Chosen Model:** Random Forest
+
+-   **Performance** test with test data set \[2021-2022\]
+
+    -   Accuracy: **71.23 %**
+
+    -   Precision: **64.55 %** : Investment prediction success rate
+
+<br>
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+#| results: markup
+
+library(caret)
+load("data/rf_fit.RData")
+load("data/corp_long_sample.RData")
+
+corp_long_sample %>% ungroup %>%
+  filter(period == 1) %>% 
+  select(-corp_id, -invested, -period) %>%
+  # filter(log_invested > 0 & log_invested < 3) %>%
+  drop_na() -> train
+
+corp_long_sample %>% ungroup %>%
+  filter(period == 2) %>%
+  select(-corp_id, -invested, -period) %>%
+  # filter(log_invested > 0 & log_invested < 3) %>%
+  drop_na() -> test
+
+library(tidymodels)
+
+train %>% 
+  select(-log_invested) -> train
+test %>% 
+  select(-log_invested) -> test
+
+train %>% 
+  mutate(inv_dum = as.factor(inv_dum)) -> train
+
+test %>% 
+  mutate(inv_dum = as.factor(inv_dum)) -> test
+
+predict(rf_fit, newdata = test) %>% 
+  confusionMatrix(test$inv_dum)
+```
+
+## Key factors affecting DT ecosystem start-up investment attraction
+
+<hr>
+
+**Variable Importance Plot**
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+library(randomForest)
+library(pdp)
+
+varImp(rf_fit, scale = FALSE) %>% 
+  plot
+```
+
+## Key factors affecting DT ecosystem start-up investment attraction
+
+<hr>
+
+**Partial Dependence Plot**
+
+![](img/partial.png){fig-align="center"}
+
+## Key factors affecting DT ecosystem start-up investment attraction
+
+<hr>
+
+**Partial Dependence Interaction Plot**
+
+![](img/pdp_1.png){fig-align="center"}
+
+## Key factors affecting DT ecosystem start-up investment attraction
+
+<hr>
+
+**Partial Dependence Interaction Plot**
+
+![](img/pdp_2.png){fig-align="center"}
+
+## Key factors affecting DT ecosystem start-up investment attraction
+
+<hr>
+
+**Partial Dependence Interaction Plot**
+
+![](img/pdp_3.png){fig-align="center"}
+
+## Key factors affecting DT ecosystem start-up investment attraction
+
+<hr>
+
+**Partial Dependence Interaction Plot**
+
+![](img/pdp_4.png){fig-align="center"}
+
+## Key factors affecting DT ecosystem start-up investment attraction
+
+<hr>
+
+**Partial Dependence Interaction Plot**
+
+![](img/pdp_5.png){fig-align="center"}
+
+## Key factors affecting DT ecosystem startup investment attraction
+
+<hr>
+
+**Partial Dependence Interaction Plot**
+
+![](img/pdp_6.png){fig-align="center"}
+
+## Discussion
+
+<hr>
+
+-   The emergence of the abstract concept of **digital transformation**
+
+    -   Problem of not fitting into the existing industry classification
+        framework
+
+    -   Problems that cannot be addressed through patent analysis, such as
+        in manufacturing, for technology convergence analysis
+
+<br>
+
+-   Attempt to classify industries within a new industrial ecosystem using
+    **topic modeling**
+
+    -   [Try to show the Convergence of technology and business
+        models]{.underline} outside of the existing framework clustering
+
+    -   Attempt to [automate the business classification
+        process]{.underline} leading to ML and Generative AI
+
+    -   Really effective in analyzing new industrial ecosystems
+
+    -   Tags, investments, buzz analysis, etc. for each business were
+        possible.
+
+## Discussion
+
+<hr>
+
+-   DT Ecosystem Analysis
+
+    -   Most visited Sectors by users (Buzz)
+
+        -   Artificial intelligence and IOT-based education and
+            distribution content system
+
+        -   Healthcare, food, cosmetics commerce and technology service
+            industries
+
+    -   Active investment area at the ***Seed*** stage (area where money is
+        flowing)
+
+        -   Digital e-commerce, pet care, IOT manufacturing and real estate
+            brokerage start-ups
+
+        -   Sales and electrical infrastructure industry using smart
+            manufacturing technology and artificial intelligence
+
+    -   ***Pre-A*** stage (market expansion area)
+
+        -   Customized media and space planning industry using Mobael games
+            and VR
+
+        -   Content production and video streaming industry through various
+            media
+
+## Discussion
+
+<hr>
+
+-   **Knowledge structure analysis** of DT ecosystem
+
+    -   Through data provided by the 'Innovation Forest' venture company
+        information platform, we were able to derive the degree of
+        correlation between technologies by analyzing how 419 unique tags
+        (technology/business/product/service) appear simultaneously.
+
+    -   Visualize the technology space of the digital transformation
+        technology venture ecosystem based on this correlation information
+
+    -   Through the position of each node (tag or technology) in the
+        technology space, which detailed technology in the digital
+        transformation technology space is fused with other technologies to
+        create a new technology, mediates other technology groups, or is
+        applied to multiple technology groups. I was able to find out.
+
+    -   Create a separate technology space for each industry classified
+        through topic modeling and confirm that the positions of
+        technologies within it can also be analyzed.
+
+## Discussion
+
+<hr>
+
+-   Development of investment (VC) attraction prediction model
+
+    -   Industry, Biz-Tech convergence, organization: deriving a framework
+        for three perspectives
+
+    -   As a result of training in period T and testing in period T+1, the
+        performance was [accuracy of over 70% and investment success rate
+        of 65%]{.underline}
+
+-   Key factors affecting investment attraction predictions
+
+    -   **Organization \> Convergence \> Industry**
+
+    -   [Confirmed that organizational dynamics can be a good signal for
+        investment decisions]{.underline}
+
+    -   Among the positions of Biz-Tech convergence, [the mediation,
+        connection, and proximity centrality of tags owned by a
+        company]{.underline} can also be a decisive factor in deciding
+        investment.
+
+-   When to invest
+
+    -   When you get +1 or +2 from 3\~4 employees
+
+    -   Or, when the organization's in_ratio is slightly higher than its
+        out_ratio
+
+    -   At the same time, companies with high mediation, weighting, and
+        proximity centrality of their tags
+
+## Future study
+
+<hr>
+
+-   Industry Classificaiton
+
+    -   Comparison of topic models and traditional classification methods
+
+-   Biz-Tech convergence part
+
+    -   Research on the meaning of centrality
+
+    -   Find ways to measure factors affecting investment factors more
+        specifically
+
+-   Organization factors
+
+    -   Theoretical discussion on in & out dynamics
+
+## Finalize this talk
+
+<br>
+
+### Thanks for your attention
+
+<br>
+
+You can find this presentation here
+
+-   <https://changjunlee.com/blogs/posts/11_dt_ecosystem.html/>
+
+<br>
+
+### Any questions & suggestions?
+
+<br>
+
+<br>
+
+<h3>Changjun LEE</h3>
+
+<h4>SungKyunKwan University</h4>
+
+<h4>School of Convergence (Tech & Culture) </h4>
+
+`r fontawesome::fa("home", "black")`
+ [changjunlee.com](https://changjunlee.com/){.uri}
+
+![](img/my_avatar.png){.absolute top="370" left="1400" width="500"}

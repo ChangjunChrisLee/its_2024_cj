@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/tabby.min.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.4.553">
+
+  <title>index</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+
+  .callout {
+    margin-top: 1em;
+    margin-bottom: 1em;  
+    border-radius: .25rem;
+  }
+
+  .callout.callout-style-simple { 
+    padding: 0em 0.5em;
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+    display: flex;
+  }
+
+  .callout.callout-style-default {
+    border-left: solid #acacac .3rem;
+    border-right: solid 1px silver;
+    border-top: solid 1px silver;
+    border-bottom: solid 1px silver;
+  }
+
+  .callout .callout-body-container {
+    flex-grow: 1;
+  }
+
+  .callout.callout-style-simple .callout-body {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-style-default .callout-body {
+    font-size: 0.9rem;
+    font-weight: 400;
+  }
+
+  .callout.callout-titled.callout-style-simple .callout-body {
+    margin-top: 0.2em;
+  }
+
+  .callout:not(.callout-titled) .callout-body {
+      display: flex;
+  }
+
+  .callout:not(.no-icon).callout-titled.callout-style-simple .callout-content {
+    padding-left: 1.6em;
+  }
+
+  .callout.callout-titled .callout-header {
+    padding-top: 0.2em;
+    margin-bottom: -0.2em;
+  }
+
+  .callout.callout-titled .callout-title  p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+    
+  .callout.callout-titled.callout-style-simple .callout-content  p {
+    margin-top: 0;
+  }
+
+  .callout.callout-titled.callout-style-default .callout-content  p {
+    margin-top: 0.7em;
+  }
+
+  .callout.callout-style-simple div.callout-title {
+    border-bottom: none;
+    font-size: .9rem;
+    font-weight: 600;
+    opacity: 75%;
+  }
+
+  .callout.callout-style-default  div.callout-title {
+    border-bottom: none;
+    font-weight: 600;
+    opacity: 85%;
+    font-size: 0.9rem;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-default div.callout-content {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+
+  .callout.callout-style-simple .callout-icon::before {
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;
+  }
+
+  .callout.callout-style-default .callout-icon::before {
+    height: 0.9rem;
+    width: 0.9rem;
+    display: inline-block;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 0.9rem 0.9rem;
+  }
+
+  .callout-title {
+    display: flex
+  }
+    
+  .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  .callout.no-icon::before {
+    display: none !important;
+  }
+
+  .callout.callout-titled .callout-body > .callout-content > :last-child {
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+  }
+
+  .callout.callout-titled .callout-icon::before {
+    margin-top: .5rem;
+    padding-right: .5rem;
+  }
+
+  .callout:not(.callout-titled) .callout-icon::before {
+    margin-top: 1rem;
+    padding-right: .5rem;
+  }
+
+  /* Callout Types */
+
+  div.callout-note {
+    border-left-color: #4582ec !important;
+  }
+
+  div.callout-note .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEU0lEQVRYCcVXTWhcVRQ+586kSUMMxkyaElstCto2SIhitS5Ek8xUKV2poatCcVHtUlFQk8mbaaziwpWgglJwVaquitBOfhQXFlqlzSJpFSpIYyXNjBNiTCck7x2/8/LeNDOZxDuEkgOXe++553zfefee+/OYLOXFk3+1LLrRdiO81yNqZ6K9cG0P3MeFaMIQjXssE8Z1JzLO9ls20MBZX7oG8w9GxB0goaPrW5aNMp1yOZIa7Wv6o2ykpLtmAPs/vrG14Z+6d4jpbSKuhdcSyq9wGMPXjonwmESXrriLzFGOdDBLB8Y6MNYBu0dRokSygMA/mrun8MGFN3behm6VVAwg4WR3i6FvYK1T7MHo9BK7ydH+1uurECoouk5MPRyVSBrBHMYwVobG2aOXM07sWrn5qgB60rc6mcwIDJtQrnrEr44kmy+UO9r0u9O5/YbkS9juQckLed3DyW2XV/qWBBB3ptvI8EUY3I9p/67OW+g967TNr3Sotn3IuVlfMLVnsBwH4fsnebJvyGm5GeIUA3jljERmrv49SizPYuq+z7c2H/jlGC+Ghhupn/hcapqmcudB9jwJ/3jvnvu6vu5lVzF1fXyZuZZ7U8nRmVzytvT+H3kilYvH09mLWrQdwFSsFEsxFVs5fK7A0g8gMZjbif4ACpKbjv7gNGaD8bUrlk8x+KRflttr22JEMRUbTUwwDQScyzPgedQHZT0xnx7ujw2jfVfExwYHwOsDTjLdJ2ebmeQIlJ7neo41s/DrsL3kl+W2lWvAga0tR3zueGr6GL78M3ifH0rGXrBC2aAR8uYcIA5gwV8zIE8onoh8u0Fca/ciF7j1uOzEnqcIm59sEXoGc0+z6+H45V1CvAvHcD7THztu669cnp+L0okAeIc6zjbM/24LgGM1gZk7jnRu1aQWoU9sfUOuhrmtaPIO3YY1KLLWZaEO5TKUbMY5zx8W9UJ6elpLwKXbsaZ4EFl7B4bMtDv0iRipKoDQT2sNQI9b1utXFdYisi+wzZ/ri/1m7QfDgEuvgUUEIJPq3DhX/5DWNqIXDOweC2wvIR90Oq3lDpdMIgD2r0dXvGdsEW5H6x6HLRJYU7C69VefO1x8Gde1ZFSJLfWS1jbCnhtOPxmpfv2LXOA2Xk2tvnwKKPFuZ/oRmwBwqRQDcKNeVQkYcOjtWVBuM/JuYw5b6isojIkYxyYAFn5K7ZBF10fea52y8QltAg6jnMqNHFBmGkQ1j+U43HMi2xMar1Nv0zGsf1s8nUsmUtPOOrbFIR8bHFDMB5zL13Gmr/kGlCkUzedTzzmzsaJXhYawnA3UmARpiYj5ooJZiUoxFRtK3X6pgNPv+IZVPcnwbOl6f+aBaO1CNvPW9n9LmCp01nuSaTRF2YxHqZ8DYQT6WsXT+RD6eUztwYLZ8rM+rcPxamv1VQzFUkzFXvkiVrySGQgJNvXHJAxiU3/NwiC03rSf05VBaPtu/Z7/B8Yn/w7eguloAAAAAElFTkSuQmCC');
+  }
+
+  div.callout-note.callout-style-default .callout-title {
+    background-color: #dae6fb
+  }
+
+  div.callout-important {
+    border-left-color: #d9534f !important;
+  }
+
+  div.callout-important .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAEKklEQVRYCcVXTWhcVRS+575MJym48A+hSRFr00ySRQhURRfd2HYjk2SSTokuBCkU2o0LoSKKraKIBTcuFCoidGFD08nkBzdREbpQ1EDNIv8qSGMFUboImMSZd4/f9zJv8ibJMC8xJQfO3HPPPef7zrvvvnvviIkpC9nsw0UttFunbUhpFzFtarSd6WJkStVMw5xyVqYTvkwfzuf/5FgtkVoB0729j1rjXwThS7Vio+Mo6DNnvLfahoZ+i/o32lULuJ3NNiz7q6+pyAUkJaFF6JwaM2lUJlV0MlnQn5aTRbEu0SEqHUa0A4AdiGuB1kFXRfVyg5d87+Dg4DL6m2TLAub60ilj7A1Ec4odSAc8X95sHh7+ZRPCFo6Fnp7HfU/fBng/hi10CjCnWnJjsxvDNxWw0NfV6Rv5GgP3I3jGWXumdTD/3cbEOP2ZbOZp69yniG3FQ9z1jD7bnBu9Fc2tKGC2q+uAJOQHBDRiZX1x36o7fWBs7J9ownbtO+n0/qWkvW7UPIfc37WgT6ZGR++EOJyeQDSb9UB+DZ1G6DdLDzyS+b/kBCYGsYgJbSQHuThGKRcw5xdeQf8YdNHsc6ePXrlSYMBuSIAFTGAtQo+VuALo4BX83N190NWZWbynBjhOHsmNfFWLeL6v+ynsA58zDvvAC8j5PkbOcXCMg2PZFk3q8MjI7WAG/Dp9AwP7jdGBOOQkAvlFUB+irtm16I1Zw9YBcpGTGXYmk3kQIC/Cds55l+iMI3jqhjAuaoe+am2Jw5GT3Nbz3CkE12NavmzN5+erJW7046n/CH1RO/RVa8lBLozXk9uqykkGAyRXLWlLv5jyp4RFsG5vGVzpDLnIjTWgnRy2Rr+tDKvRc7Y8AyZq10jj8DqXdnIRNtFZb+t/ZRtXcDiVnzpqx8mPcDWxgARUqx0W1QB9MeUZiNrV4qP+Ehc+BpNgATsTX8ozYKL2NtFYAHc84fG7ndxUPr+AR/iQSns7uSUufAymwDOb2+NjK27lEFocm/EE2WpyIy/Hi66MWuMKJn8RvxIcj87IM5Vh9663ziW36kR0HNenXuxmfaD8JC7tfKbrhFr7LiZCrMjrzTeGx+PmkosrkNzW94ObzwocJ7A1HokLolY+AvkTiD/q1H0cN48c5EL8Crkttsa/AXQVDmutfyku0E7jShx49XqV3MFK8IryDhYVbj7Sj2P2eBxwcXoe8T8idsKKPRcnZw1b+slFTubwUwhktrfnAt7J++jwQtLZcm3sr9LQrjRzz6cfMv9aLvgmnAGvpoaGLxM4mAEaLV7iAzQ3oU0IvD5x9ix3yF2RAAuYAOO2f7PEFWCXZ4C9Pb2UsgDeVnFSpbFK7/IWu7TPTvBqzbGdCHOJQSxiEjt6IyZmxQyEJHv6xyQsYk//moVFsN2zP6fRImjfq7/n/wFDguUQFNEwugAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-important.callout-style-default .callout-title {
+    background-color: #f7dddc
+  }
+
+  div.callout-warning {
+    border-left-color: #f0ad4e !important;
+  }
+
+  div.callout-warning .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAAETklEQVRYCeVWW2gcVRg+58yaTUnizqbipZeX4uWhBEniBaoUX1Ioze52t7sRq6APio9V9MEaoWlVsFasRq0gltaAPuxms8lu0gcviE/FFOstVbSIxgcv6SU7EZqmdc7v9+9mJtNks51NTUH84ed889/PP+cmxP+d5FIbMJmNbpREu4WUkiTtCicKny0l1pIKmBzovF2S+hIJHX8iEu3hZJ5lNZGqyRrGSIQpq15AzF28jgpeY6yk6GVdrfFqdrD6Iw+QlB8g0YS2g7dyQmXM/IDhBhT0UCiRf59lfqmmDvzRt6kByV/m4JjtzuaujMUM2c5Z2d6JdKrRb3K2q6mA+oYVz8JnDdKPmmNthzkAk/lN63sYPgevrguc72aZX/L9C6x09GYyxBgCX4NlvyGUHOKELlm5rXeR1kchuChJt4SSwyddZRXgvwMGvYo4QSlk3/zkHD8UHxwVJA6zjZZqP8v8kK8OWLnIZtLyCAJagYC4rTGW/9Pqj92N/c+LUaAj27movwbi19tk/whRCIE7Q9vyI6yvRpftAKVTdUjOW40X3h5OXsKCdmFcx0xlLJoSuQngnrJe7Kcjm4OMq9FlC7CMmScQANuNvjfP3PjGXDBaUQmbp296S5L4DrpbrHN1T87ZVEZVCzg1FF0Ft+dKrlLukI+/c9ENo+TvlTDbYFvuKPtQ9+l052rXrgKoWkDAFnvh0wTOmYn8R5f4k/jN/fZiCM1tQx9jQQ4ANhqG4hiL0qIFTGViG9DKB7GYzgubnpofgYRwO+DFjh0Zin2m4b/97EDkXkc+f6xYAPX0KK2I/7fUQuwzuwo/L3AkcjugPNixC8cHf0FyPjWlItmLxWw4Ou9YsQCr5fijMGoD/zpdRy95HRysyXA74MWOnscpO4j2y3HAVisw85hX5+AFBRSHt4ShfLFkIMXTqyKFc46xdzQM6XbAi702a7sy04J0+feReMFKp5q9esYLCqAZYw/k14E/xcLLsFElaornTuJB0svMuJINy8xkIYuL+xPAlWRceH6+HX7THJ0djLUom46zREu7tTkxwmf/FdOZ/sh6Q8qvEAiHpm4PJ4a/doJe0gH1t+aHRgCzOvBvJedEK5OFE5jpm4AGP2a8Dxe3gGJ/pAutug9Gp6he92CsSsWBaEcxGx0FHytmIpuqGkOpldqNYQK8cSoXvd+xLxXADw0kf6UkJNFtdo5MOgaLjiQOQHcn+A6h5NuL2s0qsC2LOM75PcF3yr5STuBSAcGG+meA14K/CI21HcS4LBT6tv0QAh8Dr5l93AhZzG5ZJ4VxAqdZUEl9z7WJ4aN+svMvwHHL21UKTd1mqvChH7/Za5xzXBBKrUcB0TQ+Ulgkfbi/H/YT5EptrGzsEK7tR1B7ln9BBwckYfMiuSqklSznIuoIIOM42MQO+QnduCoFCI0bpkzjCjddHPN/F+2Yu+sd9bKNpVwHhbS3LluK/0zgfwD0xYI5dXuzlQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-warning.callout-style-default .callout-title {
+    background-color: #fcefdc
+  }
+
+  div.callout-tip {
+    border-left-color: #02b875 !important;
+  }
+
+  div.callout-tip .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAADr0lEQVRYCe1XTWgTQRj9ZjZV8a9SPIkKgj8I1bMHsUWrqYLVg4Ue6v9BwZOxSYsIerFao7UiUryIqJcqgtpimhbBXoSCVxUFe9CTiogUrUp2Pt+3aUI2u5vdNh4dmMzOzHvvezuz8xNFM0mjnbXaNu1MvFWRXkXEyE6aYOYJpdW4IXuA4r0fo8qqSMDBU0v1HJUgVieAXxzCsdE/YJTdFcVIZQNMyhruOMJKXYFoLfIfIvVIMWdsrd+Rpd86ZmyzzjJmLStqRn0v8lzkb4rVIXvnpScOJuAn2ACC65FkPzEdEy4TPWRLJ2h7z4cArXzzaOdKlbOvKKX25Wl00jSnrwVxAg3o4dRxhO13RBSdNvH0xSARv3adTXbBdTf64IWO2vH0LT+cv4GR1DJt+DUItaQogeBX/chhbTBxEiZ6gftlDNXTrvT7co4ub5A6gp9HIcHvzTa46OS5fBeP87Qm0fQkr4FsYgVQ7Qg+ZayaDg9jhg1GkWj8RG6lkeSacrrHgDaxdoBiZPg+NXV/KifMuB6//JmYH4CntVEHy/keA6x4h4CU5oFy8GzrBS18cLJMXcljAKB6INjWsRcuZBWVaS3GDrqB7rdapVIeA+isQ57Eev9eCqzqOa81CY05VLd6SamW2wA2H3SiTbnbSxmzfp7WtKZkqy4mdyAlGx7ennghYf8voqp9cLSgKdqNfa6RdRsAAkPwRuJZNbpByn+RrJi1RXTwdi8RQF6ymDwGMAtZ6TVE+4uoKh+MYkcLsT0Hk8eAienbiGdjJHZTpmNjlbFJNKDVAp2fJlYju6IreQxQ08UJDNYdoLSl6AadO+fFuCQqVMB1NJwPm69T04Wv5WhfcWyfXQB+wXRs1pt+nCknRa0LVzSA/2B+a9+zQJadb7IyyV24YAxKp2Jqs3emZTuNnKxsah+uabKbMk7CbTgJx/zIgQYErIeTKRQ9yD9wxVof5YolPHqaWo7TD6tJlh7jQnK5z2n3+fGdggIOx2kaa2YI9QWarc5Ce1ipNWMKeSG4DysFF52KBmTNMmn5HqCFkwy34rDg05gDwgH3bBi+sgFhN/e8QvRn8kbamCOhgrZ9GJhFDgfcMHzFb6BAtjKpFhzTjwv1KCVuxHvCbsSiEz4CANnj84cwHdFXAbAOJ4LTSAawGWFn5tDhLMYz6nWeU2wJfIhmIJBefcd/A5FWQWGgrWzyORZ3Q6HuV+Jf0Bj+BTX69fm1zWgK7By1YTXchFDORywnfQ7GpzOo6S+qECrsx2ifVQAAAABJRU5ErkJggg==');
+  }
+
+  div.callout-tip.callout-style-default .callout-title {
+    background-color: #ccf1e3
+  }
+
+  div.callout-caution {
+    border-left-color: #fd7e14 !important;
+  }
+
+  div.callout-caution .callout-icon::before {
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAIKADAAQAAAABAAAAIAAAAACshmLzAAACV0lEQVRYCdVWzWoUQRCuqp2ICBLJXgITZL1EfQDBW/bkzUMUD7klD+ATSHBEfAIfQO+iXsWDxJsHL96EHAwhgzlkg8nBg25XWb0zIb0zs9muYYWkoKeru+vn664fBqElyZNuyh167NXJ8Ut8McjbmEraKHkd7uAnAFku+VWdb3reSmRV8PKSLfZ0Gjn3a6Xlcq9YGb6tADjn+lUfTXtVmaZ1KwBIvFI11rRXlWlatwIAAv2asaa9mlB9wwygiDX26qaw1yYPzFXg2N1GgG0FMF8Oj+VIx7E/03lHx8UhvYyNZLN7BwSPgekXXLribw7w5/c8EF+DBK5idvDVYtEEwMeYefjjLAdEyQ3M9nfOkgnPTEkYU+sxMq0BxNR6jExrAI31H1rzvLEfRIdgcv1XEdj6QTQAS2wtstEALLG1yEZ3QhH6oDX7ExBSFEkFINXH98NTrme5IOaaA7kIfiu2L8A3qhH9zRbukdCqdsA98TdElyeMe5BI8Rs2xHRIsoTSSVFfCFCWGPn9XHb4cdobRIWABNf0add9jakDjQJpJ1bTXOJXnnRXHRf+dNL1ZV1MBRCXhMbaHqGI1JkKIL7+i8uffuP6wVQAzO7+qVEbF6NbS0LJureYcWXUUhH66nLR5rYmva+2tjRFtojkM2aD76HEGAD3tPtKM309FJg5j/K682ywcWJ3PASCcycH/22u+Bh7Aa0ehM2Fu4z0SAE81HF9RkB21c5bEn4Dzw+/qNOyXr3DCTQDMBOdhi4nAgiFDGCinIa2owCEChUwD8qzd03PG+qdW/4fDzjUMcE1ZpIAAAAASUVORK5CYII=');
+  }
+
+  div.callout-caution.callout-style-default .callout-title {
+    background-color: #ffe5d0
+  }
+
+  </style>
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+
+<section class="slide level2">
+
+<p><br></p>
+<h2>
+<code>DT</code> Start-up Ecosystem
+</h2>
+<h2>
+Exploratory analysis of key factors of <code>Attract Investment</code>
+</h2>
+<hr>
+<p><br></p>
+<h5>
+2024 24th Biennial International Telecommunications Society
+</h5>
+<p>2024-06-25</p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h3>
+Changjun Lee <sup>1</sup>, Kyungsun Lee <sup>2</sup>, Yuri Park <sup>3</sup>
+</h3>
+<h5>
+<sup>1</sup> School of Convergence. Sungkyunkwan University
+</h5>
+<h5>
+<sup>2,3</sup> Korea Information Society Development Institute
+</h5>
+</section>
+<section id="what-is-digital-transformation" class="slide level2">
+<h2>What is Digital Transformation?</h2>
+<hr>
+<blockquote>
+<p><strong>DT (Digital Transformation)</strong> is the application of digital technology to all areas of business.</p>
+</blockquote>
+<ul>
+<li><p>These fundamental changes will change how we operate our business and deliver value to our customers. It forces us to fundamentally rethink our methods.</p></li>
+<li><p>This is not a simple technological change, but rather an organization that continuously challenges the status quo. A cultural shift that requires experimentation and getting comfortable with failure.</p></li>
+<li><p>Fundamental paradigm shift from traditional business methods and processes</p></li>
+</ul>
+<p><br></p>
+
+<img data-src="img/dt_concept.jpg" class="quarto-figure quarto-figure-center r-stretch" width="800"></section>
+<section id="motivation" class="slide level2">
+<h2>Motivation</h2>
+<hr>
+<ul>
+<li><p>Unlike manufacturing, where various technologies are integrated and digitalization is progressing rapidly, <u><strong>Digital transformation in the service industry progresses slowly</strong></u></p>
+<ul>
+<li>South Korea’s service industry has a structural problem of low productivity and small-sized scale. The problem is that it is somewhat far from technological innovation.</li>
+</ul></li>
+<li><p>However, due to COVID-19, <strong>digital transformation has emerged as a matter of survival, not a choice</strong>, and various DT attempts are underway in the service industry, starting with some fields and some companies.</p>
+<ul>
+<li><p><strong>Technology-based companies emerge and digitalization progresses</strong> to apply digital technology in various service fields (Musinsa, Masspresso (Qanda), Bucket Place (Today’s House), etc.)</p></li>
+<li><p>With the integration of digital technology, data is collected and accumulated, service methods are changing and new possibilities are opening up.</p></li>
+</ul></li>
+<li><p>In order to utilize the digital transformation as our opportunity, <strong>research is needed to diagnose and promote the digital transformation of the service industry</strong></p>
+<ul>
+<li>Since DT is a field where a lot of <u>innovation through new business models within the startup ecosystem</u> occurs, <u>analysis of startup ecosystem dynamics is needed</u></li>
+</ul></li>
+</ul>
+</section>
+<section id="why-is-dt-industry-classification-difficult" class="slide level2">
+<h2>Why is DT Industry Classification Difficult?</h2>
+<hr>
+<ol type="1">
+<li><p><strong>Various degrees of digital maturity</strong></p>
+<ul>
+<li>Different industries, and even businesses within the same industry, exist at different stages of digital maturity (e.g.&nbsp;finance, manufacturing, retail, healthcare, etc.)</li>
+<li>A one-size-fits-all classification system is likely to misrepresent these variations.</li>
+</ul></li>
+<li><p><strong>Rapid advancement in technology</strong></p>
+<ul>
+<li><p>The digital environment is changing rapidly (recent AI wave)</p></li>
+<li><p>Technological innovations continue to change the nature and scope of digital transformation, rapidly obsolete fixed classification systems.</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="why-is-dt-industry-classification-difficult-cont." class="slide level2">
+<h2>Why is DT Industry Classification Difficult? (Cont.)</h2>
+<hr>
+<ol type="1">
+<li><p><strong>Other DT approaches</strong></p>
+<ul>
+<li><p>Even companies in the same industry may have greatly different approaches to DT.</p></li>
+<li><p>e.g.) Greater emphasis on face-to-face services in finance, introduction of AI to improve customer experience <strong>vs.</strong> Innovation in payment systems or asset management methods through introduction of blockchain</p></li>
+</ul></li>
+<li><p><strong>Unique Business Model</strong></p>
+<ul>
+<li><p>Digital innovation continues to create new and unique business models that defy traditional industry classifications (mutation).</p></li>
+<li><p>e.g.) Mobility (or Housing) sharing</p></li>
+</ul></li>
+</ol>
+</section>
+<section id="research-goal" class="slide level2">
+<h2>Research Goal</h2>
+<hr>
+<p><br></p>
+<ul>
+<li><p><strong>Development of a frame for digital transformation ecosystem analysis</strong></p>
+<ul>
+<li><p><strong>Industry:</strong> Digital transformation industry classification</p></li>
+<li><p><strong>Technology convergence:</strong> Analysis of digital transformation business model and technology convergence trends</p></li>
+<li><p><strong>Organization:</strong> Analysis of organizational dynamics of digital transformation companies</p></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>Development of <strong>investment attraction prediction model</strong> using <strong>three frames</strong> of <strong>industry, technology convergence, and organization</strong></p>
+<ul>
+<li><p>Comparison of investment attraction prediction models and performance evaluation</p></li>
+<li><p>Exploring key factors influencing investment attraction in the digital transformation ecosystem</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="data-comes-from" class="slide level2">
+<h2>Data comes from</h2>
+<hr>
+<h3 id="innvation-forestwww.innoforest.co.kr-혁신의숲">Innvation Forest(<a href="https://www.innoforest.co.kr/">www.innoforest.co.kr</a>), 혁신의숲</h3>
+
+<img data-src="images/clipboard-1843129210.png" class="r-stretch"></section>
+<section id="data-comes-from-for-example" class="slide level2">
+<h2>Data comes from (for example)</h2>
+<hr>
+
+<img data-src="img/inn_for_2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="about-data" class="slide level2 scrollable">
+<h2>About data</h2>
+<hr>
+<ul>
+<li><p>Innvation Forest(<a href="https://www.innoforest.co.kr/">www.innoforest.co.kr</a>)</p>
+<ul>
+<li><p>Provides a service that provides information to investors and consumers by analyzing the businesses and technologies of digital innovation startups</p></li>
+<li><p>The American model (<a href="https://dealroom.co">dealroom.co</a>)</p></li>
+<li><p>Receive data on <strong>4,709</strong> companies (May 2022) and conduct analysis</p></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li>List of information provided in Innovation Forest DB</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 19%">
+<col style="width: 80%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><strong>Vars</strong></td>
+<td><strong>Provided information</strong></td>
+</tr>
+<tr class="even">
+<td><code>Company Decription</code></td>
+<td>Company unique ID, company name, representative name, business registration number, business address, category, Classification of corporate attributes, corporate description, recent investment history, highest investment stage, total investment amount, date of incorporation, corporate homepage URL, domestic listed market classification</td>
+</tr>
+<tr class="odd">
+<td><code>Service</code></td>
+<td>service unique ID, company name, service name</td>
+</tr>
+<tr class="even">
+<td><code>Consumer Transaction Amount</code></td>
+<td>Consumer transaction standard month, consumer transaction amount, number of consumer transactions</td>
+</tr>
+<tr class="odd">
+<td><code>Repurchase rate</code></td>
+<td>repurchase cycle classification, repurchase rate</td>
+</tr>
+<tr class="even">
+<td><code>Average number of purchases</code></td>
+<td>consumer transaction standard month, average purchase cycle, number of purchases</td>
+</tr>
+<tr class="odd">
+<td><code>Transactions by gender and age</code></td>
+<td>gender classification, age classification, transaction share</td>
+</tr>
+<tr class="even">
+<td><code>Traffic</code></td>
+<td>service unique ID, service name, traffic standard month</td>
+</tr>
+<tr class="odd">
+<td><code>Social</code></td>
+<td>buzz start date, buzz volume, SRS</td>
+</tr>
+<tr class="even">
+<td><code>Investment attraction history</code></td>
+<td>Investment attraction history ID, company unique ID, company name, investment stage, participating investors, Investment date, investment amount</td>
+</tr>
+<tr class="odd">
+<td><code>Patent</code></td>
+<td>Everything about patents…</td>
+</tr>
+<tr class="even">
+<td><code>Tech keywords</code></td>
+<td>technology keyword, keyword mention volume</td>
+</tr>
+<tr class="odd">
+<td><code>Profit/Loss/Finance</code></td>
+<td>settlement type classification, settlement target classification, settlement date, settlement figures</td>
+</tr>
+<tr class="even">
+<td><code>Organization</code></td>
+<td>Employment start date, employees hired, employees quit, total number of employees</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="business-category-distribution" class="slide level2">
+<h2>Business category distribution</h2>
+<hr>
+
+<img data-src="img/cat_tree.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="business-tag-distribution" class="slide level2">
+<h2>Business tag distribution</h2>
+<hr>
+<ul>
+<li>e.g) Class101 (Online-based hobby|Edu class platform)</li>
+</ul>
+
+<img data-src="img/tag_eg.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="business-tag-distribution-1" class="slide level2">
+<h2>Business tag distribution</h2>
+<hr>
+
+<img data-src="img/tab_tree.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="cumulative-investment-amount" class="slide level2">
+<h2>Cumulative investment amount</h2>
+<hr>
+<ul>
+<li><p>Distribution of cumulative investment amount attracted by InnoForest DB (unit: KRW 100 million)</p>
+<ul>
+<li><p>Before removing outliers on the left, after removing outliers on the right</p></li>
+<li><p>Digital transformation companies mainly received investments between 5 and 4 billion, with an average cumulative investment of about 1.5 billion.</p></li>
+</ul></li>
+</ul>
+<div class="cell quarto-layout-panel" data-layout="[40,-10,40]">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 44.4%;justify-content: center;">
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960"></p>
+</div>
+<div class="quarto-figure-spacer quarto-layout-cell" style="flex-basis: 11.1%;justify-content: flex-start;">
+<p>&nbsp;</p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 44.4%;justify-content: center;">
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-1-2.png" width="960"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="framework-for-digital-transformation-ecosystem-analysis" class="slide level2">
+<h2><strong>Framework for digital transformation ecosystem analysis</strong></h2>
+<hr>
+<p><br></p>
+<p><br></p>
+<p><br></p>
+<h3 id="industry-digital-transformation-industry-classification">1. <strong><code>Industry</code>:</strong> Digital transformation industry classification</h3>
+<p><br></p>
+<h3 id="technology-business-convergence-analysis-of-convergence-trends-of-digital-transformation-business-model-and-technology">2. <code>Technology business convergence</code>: Analysis of convergence trends of digital transformation business model and technology</h3>
+<p><br></p>
+<h3 id="organization-analysis-of-organizational-dynamics-of-digital-transformation-companies">3. <code>Organization</code>: Analysis of organizational dynamics of digital transformation companies</h3>
+</section>
+<section id="digital-transformation-industry-classification" class="slide level2">
+<h2>Digital transformation ‘industry’ classification</h2>
+<hr>
+<p><strong>Topic modelling</strong></p>
+<blockquote>
+<p>A kind of <u>statistical modeling</u> to discover abstract <u>“topics”</u> that occur in a collection of documents.</p>
+</blockquote>
+<p><br></p>
+<p><strong>LDA</strong> (Latent Dirichlet Allocation)</p>
+<blockquote>
+<p>LDA is a generative probability model that assumes that each chunk of text (e.g.&nbsp;a document or sentence) is a mixture of a specific set of topics and that each word in a document is attributed to one of the topics in the document.</p>
+</blockquote>
+</section>
+<section id="digital-transformation-industry-classification-1" class="slide level2">
+<h2>Digital transformation ‘industry’ classification</h2>
+<hr>
+<p><strong>DT ecosystem industry classification using topic modeling</strong></p>
+<ul>
+<li><p>Topic modeling is used to classify industries within a digital ecosystem where business models and technologies are integrated.</p></li>
+<li><p>Assumptions of topic modeling: A document exists as a distribution of multiple topics, and a topic exists as a distribution of multiple sentences (words).</p>
+<ul>
+<li><p>Document: Company</p></li>
+<li><p>Sentence (word): Sentence (word, keyword) that describes the company</p></li>
+<li><p>Topic: Industry</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="topic-modeling-lda-details" class="slide level2 scrollable">
+<h2>Topic modeling (LDA details)</h2>
+<hr>
+<p>The LDA model aims to find:</p>
+<ul>
+<li><p><strong>Document to Topic distributions</strong>: How likely each topic is for each document.</p></li>
+<li><p><strong>Topic to Word distributions</strong>: How likely each word is for each topic.</p></li>
+</ul>
+<p><br></p>
+<p>Mathematically, these distributions can be represented as follows:</p>
+<ul>
+<li><strong>Document to Topic distribution</strong>: For each document <span class="math inline">\(d\)</span>, there’s a multinomial distribution over topics <span class="math inline">\(θ_d\)</span>.</li>
+</ul>
+<p><span class="math display">\[
+θ_d \sim Dirichlet(α)
+\]</span></p>
+<blockquote>
+<p>Here, <span class="math inline">\(α\)</span> is a K-dimensional vector, where K is the number of topics.</p>
+</blockquote>
+<p><span class="math display">\[
+θ_d \sim \beta_1 Topic_1 + \beta_2 Topic_2 + ... + \beta_k Topic_k
+\]</span></p>
+<p><br></p>
+<ul>
+<li><strong>Topic to Word distribution</strong>: For each topic <span class="math inline">\(k\)</span>, there’s a multinomial distribution over words <span class="math inline">\(β_k\)</span>.</li>
+</ul>
+<p><span class="math display">\[
+β_k \sim Dirichlet(δ)
+\]</span></p>
+<blockquote>
+<p>Here, <span class="math inline">\(δ\)</span> is a W-dimensional vector, where W is the number of words in the vocabulary.</p>
+</blockquote>
+<p><span class="math display">\[
+β_k \sim \gamma_1 Word_1 + \gamma_2 Word_2 + ...+ \gamma_k Word_k
+\]</span></p>
+<p><br></p>
+<p>Given these distributions, each word <span class="math inline">\(w_{di}\)</span> in each document <span class="math inline">\(d\)</span> is generated in the following way:</p>
+<ul>
+<li>Choose a topic <span class="math inline">\(z_{di}\)</span> from the document’s multinomial distribution of topics.</li>
+</ul>
+<p><span class="math display">\[
+z_{di} \sim Multinomial(θ_d)
+\]</span></p>
+<p><br></p>
+<ul>
+<li>Choose a word from the topic’s multinomial distribution of words.</li>
+</ul>
+<p><span class="math display">\[
+w_{di} \sim Multinomial(β_{z_{di}})
+\]</span></p>
+<p><br></p>
+<p>The goal is to learn the hidden topic structure <span class="math inline">\(θ_d\)</span> and <span class="math inline">\(β_k\)</span> that likely generated the observed collection of documents.</p>
+</section>
+<section id="developing-dt-ecosystem-industry-using-topic-modeling" class="slide level2 scrollable">
+<h2>Developing DT ecosystem industry using ‘topic modeling’</h2>
+<hr>
+<ul>
+<li>Perform LDA using company descriptions in the data</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<colgroup>
+<col style="width: 22%">
+<col style="width: 77%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">기업명</th>
+<th style="text-align: left;">기업설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">서울옥션</td>
+<td style="text-align: left;">미술품 경매 서비스 플랫폼 ‘서울옥션’, ’블랙랏’을 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">한국산업은행</td>
+<td style="text-align: left;">한국산업은행법에 의해 설립된 특수은행</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">아산나눔재단</td>
+<td style="text-align: left;">청년창업 지원 및 교육사업, 협력사업을 전개하는 현대그룹의 재단</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">케이옥션</td>
+<td style="text-align: left;">미술품 경매 서비스 ’케이옥션’을 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">민다</td>
+<td style="text-align: left;">한인 숙소 숙박 예약 플랫폼 ’민다’를 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">대학내일</td>
+<td style="text-align: left;">트렌드 미디어 ‘캐릿’ 운영 및 광고/마케팅 솔루션을 제공하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">샤페론</td>
+<td style="text-align: left;">아토피 피부염 치료제를 개발하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">자연인</td>
+<td style="text-align: left;">천연화장품 브랜드 ’아이소이’를 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">리본즈코리아</td>
+<td style="text-align: left;">명품 신제품/빈티지 제품 커머스 및 렌트 서비스 플랫폼 ’리본즈’를 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">이그린글로벌</td>
+<td style="text-align: left;">마이크로튜버기술 기반 씨감자 종자를 개발하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">파킹클라우드</td>
+<td style="text-align: left;">클라우드 기반 스마트 주차장 관리 및 검색 서비스를 제공하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">아이헤이트플라잉버그스</td>
+<td style="text-align: left;">에듀테크 기반 중고등 온라인 영어, 수학 과외 플랫폼 ’밀당PT’를 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">버튼테크놀로지</td>
+<td style="text-align: left;">대리운전 콜 플랫폼 ’버튼대리’를 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">머스트잇</td>
+<td style="text-align: left;">온라인 명품 커머스 플랫폼 ’머스트잇’을 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">라이칸스로프</td>
+<td style="text-align: left;">대한민국의 레저스포츠 랜턴 전문 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">선을만나다</td>
+<td style="text-align: left;">정부 중앙부처와 산하기관, 스타트업의 홍보기획과 대행 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">에이팀벤처스</td>
+<td style="text-align: left;">제조 업체 매칭 플랫폼 ’카파’를 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">티켓몹</td>
+<td style="text-align: left;">공연·페스티벌 전문 소셜 큐레이션 서비스 ‘꽃가마’ 개발 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">500비디오스</td>
+<td style="text-align: left;">모바일 기반 비디오 명함 제작 플랫폼 ’500비디오스’를 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">스리체어스</td>
+<td style="text-align: left;">저널 디지털 퍼블리싱 플랫폼 ’북저널리즘’을 운영하는 기업</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="classification-of-dt-ecosystem-industries-using-topic-modeling" class="slide level2">
+<h2>Classification of DT ecosystem industries using ‘topic modeling’</h2>
+<hr>
+<ul>
+<li><p>Text preprocessing process, such as removing special characters, unifying capital letters, and extracting nouns.</p></li>
+<li><p>Determine the optimal number of topics: <code>k = 20</code></p></li>
+</ul>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><ul>
+<li><p>LDA model results estimating beta and gamma values ​​with 20 topics</p>
+<ul>
+<li><p>Beta: Word (keyword) probability by topic (industry)</p></li>
+<li><p>gamma: Topic (industry) probability by document (company)</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="classification-of-dt-ecosystem-industries-using-topic-modeling-1" class="slide level2">
+<h2>Classification of DT ecosystem industries using ‘topic modeling’</h2>
+<hr>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center r-stretch" width="4000"></section>
+<section id="keywords-by-dt-ecosystem-industry" class="slide level2">
+<h2>‘Keywords’ by DT ecosystem industry</h2>
+<hr>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-5-1.png" class="quarto-figure quarto-figure-center r-stretch" width="4000"></section>
+<section id="dt-ecosystem-industry-specific-keywords" class="slide level2 scrollable">
+<h2>DT ecosystem industry-specific ‘keywords’</h2>
+<hr>
+<ul>
+<li>Detailed company description of topic 16 (industry) Contents: Gamma Sort in descending order</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<colgroup>
+<col style="width: 16%">
+<col style="width: 83%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">기업명</th>
+<th style="text-align: left;">기업설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">미디어프론트</td>
+<td style="text-align: left;">실감콘텐츠 및 미디어 솔루션을 기반으로 디지털 미디어 컨설팅 및 공간 기획을 하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">키베이직</td>
+<td style="text-align: left;">반려동물 생애주기 맞춤형 건강식품 브랜드 ’위그힐’을 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">시프트업</td>
+<td style="text-align: left;">모바일 RPG(role playing game) 게임 ‘데스티니 차일드’와 ’니케:전쟁의 여신’ 등을 개발 및 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">아이디어박스</td>
+<td style="text-align: left;">모바일 AoS 게임을 개발하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5민랩</td>
+<td style="text-align: left;">AI/VR 기반 모바일 게임을 개발하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">제트커머스코퍼레이션</td>
+<td style="text-align: left;">퀵커머스 마켓 플랫폼 ’패스켓’을 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">아이지에이웍스</td>
+<td style="text-align: left;">AI/머신러닝 기반 모바일 마케팅 솔루션을 제공하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">넥셀론</td>
+<td style="text-align: left;">모바일 낚시 게임 ‘피싱앤라이프’ 등을 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">나날이</td>
+<td style="text-align: left;">VR 게임 ‘후르츠어택 VR’ 및 모바일 게임 ‘샐리의 법칙’ 등을 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">라이온하트스튜디오</td>
+<td style="text-align: left;">모바일 MMO RPG 게임 ’오딘’을 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">엔퓨전</td>
+<td style="text-align: left;">2D 애니메이션 기반 모바일 수집형 RPG 게임을 개발하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">샤인게임즈</td>
+<td style="text-align: left;">게임개발 기술 기반의 실시간 PVP 팀 배틀 게임을 개발하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">하이로컬</td>
+<td style="text-align: left;">전세계 현지인과의 실시간 통화 연결 플랫폼 ’하이로컬’을 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">뉴지스탁</td>
+<td style="text-align: left;">개인투자자를 위한 투자 로보어드바이저 및 알고리즘 매매를 하는 “젠포트”를 개발, 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">액션스퀘어</td>
+<td style="text-align: left;">모바일 액션 RPG 게임 ‘블레이드’, ’삼국지 블레이드’등을 개발 및 공급하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">한국공간데이터</td>
+<td style="text-align: left;">AI 기반 공간 운영 솔루션 ‘스페이션’ 및 청소/수리 서비스 플랫폼 ‘마이소장’, ’클리니어’를 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">노써치</td>
+<td style="text-align: left;">사용자 리뷰 기반 가전제품 비교,추천 및 판매 플랫폼 ’노써치’를 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">비브스튜디오스</td>
+<td style="text-align: left;">VR/AR 기술 기반 메타버스 콘텐츠의 기획/제작 및 솔루션을 제공하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">플레인베이글</td>
+<td style="text-align: left;">AI 알고리즘 기반 고객맞춤형 언어 학습 플랫폼 ’스키피’와 채팅형 시뮬레이션 게임 플랫폼 ’피카’를 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">넵튠</td>
+<td style="text-align: left;">모바일 게임을 개발하는 기업</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="dt-ecosystem-industry-specific-keywords-1" class="slide level2 scrollable">
+<h2>DT ecosystem industry-specific ‘keywords’</h2>
+<hr>
+<ul>
+<li>Detailed company description of topic 20 (industry) Contents: Gamma Sort in descending order</li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<table>
+<colgroup>
+<col style="width: 19%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">기업명</th>
+<th style="text-align: left;">기업설명</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">바이포엠</td>
+<td style="text-align: left;">광고마케팅 기반 PB 상품 유통 및 음악/출판/영상 등의 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">비디오빌리지</td>
+<td style="text-align: left;">뉴미디어 기반 영상 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">투니모션</td>
+<td style="text-align: left;">웹툰 기반 애니메이션 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">플레이리스트</td>
+<td style="text-align: left;">웹드라마 및 모바일 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">캠프파이어애니웍스</td>
+<td style="text-align: left;">애니메이션 영화 및 비디오물을 제작하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">앰포</td>
+<td style="text-align: left;">영상 콘텐츠 전용 VPN ‘마릴 VPN’ 솔루션을 제공하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">어반플레이</td>
+<td style="text-align: left;">도시를 기획하고 도시 맞춤형 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">모스테입스</td>
+<td style="text-align: left;">애니메이션, 게임, 웹툰 등을 제작하는 콘텐츠 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">쉐이커미디어</td>
+<td style="text-align: left;">템플릿 기반 상업용 영상 제작 플랫폼 ’쉐이커’를 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">스튜디오쉘터</td>
+<td style="text-align: left;">3D그래픽, 애니메이션 기술을 기반 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">유니드캐릭터</td>
+<td style="text-align: left;">유아용 애니메이션 컨텐츠 “크리켓팡”을 제작하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">엠젯패밀리</td>
+<td style="text-align: left;">웹툰/웹소설 제작 및 굿즈 커머스 플랫폼을 운영하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">구디스튜디오</td>
+<td style="text-align: left;">디지털 제작 시스템 기반 웹툰,웹소설 등의 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">몬스터스튜디오</td>
+<td style="text-align: left;">‘브레드 이발소’ 등의 애니메이션 영상 및 굿즈를 제작하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">네오사피엔스</td>
+<td style="text-align: left;">인공지능 기반 음성, 영상 콘텐츠 제작 서비스 플랫폼 ’타입캐스트’를 운영하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">테이크원컴퍼니</td>
+<td style="text-align: left;">게임/음악/드라마/영화/웹툰 등의 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">엔진비주얼웨이브</td>
+<td style="text-align: left;">시각 특수효과 및 영상 그래픽 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">딥픽셀</td>
+<td style="text-align: left;">컴퓨터 비전 및 머신 러닝 기반 시각 지능 알고리즘을 연구, 개발하는 기업</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">얼반웍스</td>
+<td style="text-align: left;">방송 및 광고 제작, 연예 매니지먼트 및 뉴미디어 사업 등의 콘텐츠를 제작하는 기업</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">멋들어진</td>
+<td style="text-align: left;">MTO 패션 가상제작 및 주문/생산 관리 솔루션 플랫폼 ’플러그’를 운영하는 기업</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="derive-titles-by-industry" class="slide level2 scrollable">
+<h2>Derive titles by industry</h2>
+<hr>
+<ul>
+<li><p>Utilize OpenAI’s <code>chatGPT 4.0</code> (use prompt below, automate)</p></li>
+<li><p>Select the most appropriate industry name among the candidates and revise it under the supervision of the researcher.</p></li>
+</ul>
+<p><strong><em>Prompt template</em></strong></p>
+<blockquote>
+<p>Summarize the detailed descriptions of the representative companies below into the names of the industries they represent. - At this time, create an industry name using industry-specific keywords X1, X2, X3, .., X10. - Make 5 industry name candidates. - Details of 30 representative Explanation lists</p>
+</blockquote>
+<p><strong>Derive final industry names</strong></p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Industry Name</strong></p>
+</div>
+<div class="callout-content">
+<p>1. Healthcare, food, cosmetics commerce and technology services industries</p>
+<p>2. Immunity and incurable disease treatment industry using new drug development and digital technology</p>
+<p>3. Sales and electrical infrastructure industry using smart manufacturing technology and artificial intelligence</p>
+<p>4. Smart software and location-based accommodation and travel service brokerage industry</p>
+<p>5. Wearable and pharmaceutical-based brand commerce and sales industry</p>
+<p>6. Online payment, commerce and autonomous driving technology industry</p>
+<p>7. Big data analysis and security-based business solution industry</p>
+<p>8. Artificial intelligence and IOT-based education and distribution content system industry</p>
+<p>9. Digital content and information system industry focused on fashion, beauty and health</p>
+<p>10. IT and e-commerce consulting industry for global information and data management</p>
+<p>11. Digital-based online and offline communities and marketing support industry</p>
+<p>12. Vehicle management, robotics technology, diagnostic product manufacturing and media industries</p>
+<p>13. Meta-education, shopping and supply management, English home service industry</p>
+<p>14. Comparison-purchase commerce centered on online sharing and collaboration</p>
+<p>15. Digital e-commerce, pet care, IOT manufacturing, and real estate brokerage startup industries</p>
+<p>16. Customized media and space planning industry using mobile games and VR</p>
+<p>17. Brand product distribution and software design industry focusing on non-face-to-face training and reservation services</p>
+<p>18. Blockchain-based virtual asset management and integrated trading community industry</p>
+<p>19. Eco-friendly technology industry through professional manufacturing and supply</p>
+<p>20. Content production and video streaming industry through various media</p>
+</div>
+</div>
+</div>
+</section>
+<section id="companies-by-industry" class="slide level2 scrollable">
+<h2>Companies by Industry</h2>
+<hr>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="6400"></section>
+<section id="buzz-by-industry" class="slide level2">
+<h2>Buzz by industry</h2>
+<hr>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="4000"></section>
+<section id="investment-stage-distribution-by-industry" class="slide level2 scrollable">
+<h2>Investment stage distribution by industry</h2>
+<hr>
+<ul>
+<li><p>Investment timing, investment round, and investment field are different for each VC.</p></li>
+<li><p>When money flows in (investment occurs), a new market is formed and grows together.</p></li>
+<li><p>We want to look at the timing of investment in order to predict what new market will be formed in the future.</p></li>
+<li><p>Investments at the SEED (~300 million) and Pre-A (5~1 billion) stages are at the stage of growing the market.</p></li>
+</ul>
+</section>
+<section id="investment-stage-distribution-by-industry-1" class="slide level2 scrollable">
+<h2>Investment stage distribution by industry</h2>
+<hr>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="6400"></section>
+<section id="industrial-ecosystem-tech-bm-convergence-analysis-through-knowledge-structure-analysis" class="slide level2">
+<h2>Industrial ecosystem ‘Tech-BM’ convergence analysis through knowledge structure analysis</h2>
+<hr>
+<h3 id="knowledge-structure">knowledge Structure</h3>
+<ul>
+<li><p>Knowledge structures represent the organization and distribution of knowledge within different economic activities and <strong>geographic locations</strong></p></li>
+<li><p>Involves understanding how knowledge is created, shared and utilized across different sectors of the economy and how it is influenced by spatial factors.</p></li>
+<li><p>Examines spatial patterns of knowledge production, innovation and diffusion, considering factors such as proximity, connectivity and accessibility</p></li>
+<li><p>Knowledge clusters or innovation hubs emerge in specific geographic areas where knowledge-intensive activities are concentrated, such as technology parks or research centers.</p></li>
+<li><p>Knowledge spillover occurs when knowledge created in one location or industry spills over to benefit another location or industry, leading to an agglomeration effect.</p></li>
+<li><p>The geography of knowledge is influenced by factors such as investment in research and development (R&amp;D), educational institutions, availability of skilled labor and infrastructure.</p></li>
+<li><p>Local and regional knowledge assets, including human capital, social networks and institutions, play an important role in attracting and sustaining knowledge-based industries.</p></li>
+<li><p>The spatial composition of knowledge also affects regional disparities, as regions with higher knowledge intensity tend to experience greater economic development and innovation than regions with lower knowledge intensity.</p></li>
+</ul>
+</section>
+<section id="knowledge-space" class="slide level2">
+<h2>Knowledge Space</h2>
+<hr>
+
+<img data-src="img/node_edge.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="knowledge-space-1" class="slide level2">
+<h2>Knowledge Space</h2>
+<hr>
+
+<img data-src="img/tech_evo.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="industrial-ecosystem-tech-bm-convergence-analysis-through-knowledge-structure-analysis-1" class="slide level2">
+<h2>Industrial ecosystem <code>Tech-BM</code> convergence analysis through knowledge structure analysis</h2>
+<hr>
+<blockquote>
+<p>Knowledge Structure = Tag Structure</p>
+<p>Tag components: Business Model, Categories, Technologies</p>
+</blockquote>
+<p><br></p>
+<h3 id="business-model-business-tag">Business Model: Business Tag</h3>
+<blockquote>
+<p>TAG: Business, product, service, market keywords, etc.</p>
+</blockquote>
+<p><br></p>
+<h3 id="technology-tech-tag">TEchnology: Tech Tag</h3>
+<blockquote>
+<p>TAG: Technology, specialty area keywords, etc.</p>
+</blockquote>
+<p><br></p>
+</section>
+<section id="tag-structure-analysis-by-industry" class="slide level2">
+<h2>Tag structure analysis by industry</h2>
+<hr>
+<blockquote>
+<p>Tag portfolio of companies in the industry</p>
+</blockquote>
+<hr>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="tag-structure-analysis-by-industry-1" class="slide level2">
+<h2>Tag structure analysis by industry</h2>
+<hr>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="tag-structure-analysis-by-industry-2" class="slide level2">
+<h2>Tag structure analysis by industry</h2>
+<hr>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="edge-area-of-knowledge-structure-biz-tech-space" class="slide level2">
+<h2>Edge area of knowledge structure: <code>Biz-Tech</code> space</h2>
+<hr>
+
+<img data-src="img/total_net.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="edge-area-of-knowledge-structure-biz-tech-space-1" class="slide level2">
+<h2>Edge area of knowledge structure: <code>Biz-Tech</code> space</h2>
+<hr>
+<iframe src="net_viz/total_tag_network.html" frameborder="0" width="160%" height="1000" scrolling="no" allowfullscreen="">
+</iframe>
+</section>
+<section id="biz-tech-space-by-industry" class="slide level2">
+<h2><code>Biz-Tech</code> space by industry</h2>
+<hr>
+<p><strong>Immunity and incurable disease treatment industry using new drug development and digital technology</strong></p>
+<iframe src="net_viz/topic_2_tag_network.html" frameborder="0" width="160%" height="1000" scrolling="no" allowfullscreen="">
+</iframe>
+</section>
+<section id="biz-tech-space-by-industry-1" class="slide level2">
+<h2><code>Biz-Tech</code> space by industry</h2>
+<hr>
+<p><strong>Digital content and information system industry focused on fashion, beauty and health</strong></p>
+<iframe src="net_viz/topic_9_tag_network.html" frameborder="0" width="160%" height="1000" scrolling="no" allowfullscreen="">
+</iframe>
+</section>
+<section id="connection-weighted-connection-mediation-power-and-closeness-centrality-in-biz-tech-space" class="slide level2 scrollable">
+<h2>Connection, weighted connection, mediation, power, and closeness centrality in <code>Biz-Tech</code> space</h2>
+<hr>
+<ul>
+<li><p><strong>Degree</strong>: The number of other nodes in a graph to which a node is directly connected: can indirectly indicate the importance of that node in the graph</p></li>
+<li><p><strong>Weighted Degree</strong>: In a weighted graph, the weighted connection of a node represents the sum of the weights of connected edges: the degree of connection of a node considering the ‘strength’ or ‘importance’ of the edge.</p></li>
+<li><p><strong>Betweenness Centrality</strong>: Indicates how often they appear on the shortest path between all pairs of nodes in the graph: nodes with high betweenness centrality act as ‘bridges’ in the flow of information</p></li>
+<li><p><strong>Eigenvector Centrality</strong>: The power centrality of a node takes into account the importance of other nodes directly connected to that node: nodes that are more connected to important nodes have higher power centrality.</p></li>
+<li><p><strong>Closeness Centrality</strong>: The closeness centrality of a node indicates how ‘close’ it is to all other nodes in the graph: where ‘closer’ refers to the path length between nodes, i.e.&nbsp;the shorter the distance between nodes, the higher the closeness centrality. .</p></li>
+</ul>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>             Id   Deg w.Deg          Btw         Eig       Close
+         &lt;char&gt; &lt;num&gt; &lt;num&gt;        &lt;num&gt;       &lt;num&gt;       &lt;num&gt;
+  1:    1인가구    34    85 0.0006103511 0.003610531 0.001142857
+  2:   3D그래픽   152  1435 0.0022541048 0.046144039 0.001225490
+  3:   3D프린팅    81   397 0.0018932947 0.015416471 0.001207729
+  4:        3PL    40   125 0.0008548040 0.004469786 0.001172333
+  5:         5G    76   421 0.0009656426 0.014534478 0.001131222
+ ---                                                            
+416:   화상회의    60   203 0.0004986936 0.005370843 0.001164144
+417: 화장품정보    69   320 0.0009651095 0.010240653 0.001190476
+418:       화학    88   689 0.0021631283 0.027356933 0.001182033
+419:       환전    34   152 0.0003481404 0.005784366 0.001071811
+420:       회계    77   330 0.0019287885 0.010962206 0.001156069</code></pre>
+</div>
+</div>
+</section>
+<section id="tags-position-in-the-digital-transformation-technology-space" class="slide level2">
+<h2>Tag’s position in the digital transformation technology space</h2>
+<hr>
+
+<img data-src="img/deg_btw.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="investment-attraction-prediction-model" class="slide level2">
+<h2>Investment Attraction Prediction Model</h2>
+<hr>
+
+<img data-src="images/clipboard-2711767886.png" class="r-stretch"></section>
+<section id="investment-attraction-prediction-model-1" class="slide level2 scrollable">
+<h2>Investment Attraction Prediction Model</h2>
+<hr>
+<ul>
+<li><p>Utilizing investment attraction data for four years from 2019 to 2022</p>
+<ul>
+<li><p><strong><em>Phase 1:</em></strong> 2019 ~ 2020 as a <strong>Train</strong> data set</p></li>
+<li><p><strong><em>Phase 2:</em></strong> 2021 ~ 2022 as a <strong>Test</strong> data set</p></li>
+</ul></li>
+<li><p>Predictor: Investment attraction dummy variable for company i at time t</p></li>
+<li><p><strong>Invest Forecasting Model</strong></p></li>
+</ul>
+<p><span class="math display">\[
+Invested_{i,t} = f(Industry_{i}, BizTech_{i}, Org_{i,t})
+\]</span></p>
+<blockquote>
+<p><em>i</em> and <em>j</em> refers to each firm and each period</p>
+</blockquote>
+<p><span class="math display">\[
+Industry_{i} = \sum_{j=1}^k \beta_i \gamma_i
+\]</span></p>
+<blockquote>
+<p><em>k</em> is the number of topics (industries). k = 20 in this study.</p>
+</blockquote>
+<p><span class="math display">\[
+BizTech_{i} = \beta_1 Deg_{i}+\beta_2 w.Deg_{i}+ \beta_3 Btw_{i} + \beta_4 Eig_{i} + \beta_5 Close_{i}
+\]</span></p>
+<p><span class="math display">\[
+Deg_{i} = \frac{1}{l} \sum_{j=1}^l Deg_{i,j}
+\]</span></p>
+<blockquote>
+<p><em>j</em> refers to each tag in firm <em>i</em> and <em>l</em> is the number of tags in firm <em>i</em></p>
+</blockquote>
+<p><span class="math display">\[
+Org_{i,t}=\beta_1 emp_{i,t} + \beta_2 InRatio_{i,t} + \beta_3 OutRatio_{i,t} + \beta_4 LogOddsRatio_{i,t}
+\]</span></p>
+<p><span class="math display">\[
+LogOddsRatio_{i,t} = ln(\frac{InRatio_{i,t}}{OutRatio_{i,t}})
+\]</span></p>
+</section>
+<section id="investment-attraction-prediction-model-2" class="slide level2">
+<h2>Investment Attraction Prediction Model</h2>
+<hr>
+<ul>
+<li><p><strong>Competing Models:</strong> SVM, Random Forest, Ada-boost</p>
+<ul>
+<li>Explanable ML (Opt out NN and etc.)</li>
+</ul></li>
+<li><p><strong>Chosen Model:</strong> Random Forest</p></li>
+<li><p><strong>Performance</strong> test with test data set [2021-2022]</p>
+<ul>
+<li><p>Accuracy: <strong>71.23 %</strong></p></li>
+<li><p>Precision: <strong>64.55 %</strong> : Investment prediction success rate</p></li>
+</ul></li>
+</ul>
+<p><br></p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>Confusion Matrix and Statistics
+
+          Reference
+Prediction    0    1
+         0 2337  837
+         1  403  729
+                                          
+               Accuracy : 0.712           
+                 95% CI : (0.6982, 0.7255)
+    No Information Rate : 0.6363          
+    P-Value [Acc &gt; NIR] : &lt; 2.2e-16       
+                                          
+                  Kappa : 0.3385          
+                                          
+ Mcnemar's Test P-Value : &lt; 2.2e-16       
+                                          
+            Sensitivity : 0.8529          
+            Specificity : 0.4655          
+         Pos Pred Value : 0.7363          
+         Neg Pred Value : 0.6440          
+             Prevalence : 0.6363          
+         Detection Rate : 0.5427          
+   Detection Prevalence : 0.7371          
+      Balanced Accuracy : 0.6592          
+                                          
+       'Positive' Class : 0               
+                                          </code></pre>
+</div>
+</div>
+</section>
+<section id="key-factors-affecting-dt-ecosystem-start-up-investment-attraction" class="slide level2">
+<h2>Key factors affecting DT ecosystem start-up investment attraction</h2>
+<hr>
+<p><strong>Variable Importance Plot</strong></p>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-18-1.png" width="960" class="r-stretch"></section>
+<section id="key-factors-affecting-dt-ecosystem-start-up-investment-attraction-1" class="slide level2">
+<h2>Key factors affecting DT ecosystem start-up investment attraction</h2>
+<hr>
+<p><strong>Partial Dependence Plot</strong></p>
+
+<img data-src="img/partial.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="key-factors-affecting-dt-ecosystem-start-up-investment-attraction-2" class="slide level2">
+<h2>Key factors affecting DT ecosystem start-up investment attraction</h2>
+<hr>
+<p><strong>Partial Dependence Interaction Plot</strong></p>
+
+<img data-src="img/pdp_1.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="key-factors-affecting-dt-ecosystem-start-up-investment-attraction-3" class="slide level2">
+<h2>Key factors affecting DT ecosystem start-up investment attraction</h2>
+<hr>
+<p><strong>Partial Dependence Interaction Plot</strong></p>
+
+<img data-src="img/pdp_2.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="key-factors-affecting-dt-ecosystem-start-up-investment-attraction-4" class="slide level2">
+<h2>Key factors affecting DT ecosystem start-up investment attraction</h2>
+<hr>
+<p><strong>Partial Dependence Interaction Plot</strong></p>
+
+<img data-src="img/pdp_3.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="key-factors-affecting-dt-ecosystem-start-up-investment-attraction-5" class="slide level2">
+<h2>Key factors affecting DT ecosystem start-up investment attraction</h2>
+<hr>
+<p><strong>Partial Dependence Interaction Plot</strong></p>
+
+<img data-src="img/pdp_4.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="key-factors-affecting-dt-ecosystem-start-up-investment-attraction-6" class="slide level2">
+<h2>Key factors affecting DT ecosystem start-up investment attraction</h2>
+<hr>
+<p><strong>Partial Dependence Interaction Plot</strong></p>
+
+<img data-src="img/pdp_5.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="key-factors-affecting-dt-ecosystem-startup-investment-attraction" class="slide level2">
+<h2>Key factors affecting DT ecosystem startup investment attraction</h2>
+<hr>
+<p><strong>Partial Dependence Interaction Plot</strong></p>
+
+<img data-src="img/pdp_6.png" class="quarto-figure quarto-figure-center r-stretch"></section>
+<section id="discussion" class="slide level2">
+<h2>Discussion</h2>
+<hr>
+<ul>
+<li><p>The emergence of the abstract concept of <strong>digital transformation</strong></p>
+<ul>
+<li><p>Problem of not fitting into the existing industry classification framework</p></li>
+<li><p>Problems that cannot be addressed through patent analysis, such as in manufacturing, for technology convergence analysis</p></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li><p>Attempt to classify industries within a new industrial ecosystem using <strong>topic modeling</strong></p>
+<ul>
+<li><p><u>Try to show the Convergence of technology and business models</u> outside of the existing framework clustering</p></li>
+<li><p>Attempt to <u>automate the business classification process</u> leading to ML and Generative AI</p></li>
+<li><p>Really effective in analyzing new industrial ecosystems</p></li>
+<li><p>Tags, investments, buzz analysis, etc. for each business were possible.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="discussion-1" class="slide level2">
+<h2>Discussion</h2>
+<hr>
+<ul>
+<li><p>DT Ecosystem Analysis</p>
+<ul>
+<li><p>Most visited Sectors by users (Buzz)</p>
+<ul>
+<li><p>Artificial intelligence and IOT-based education and distribution content system</p></li>
+<li><p>Healthcare, food, cosmetics commerce and technology service industries</p></li>
+</ul></li>
+<li><p>Active investment area at the <strong><em>Seed</em></strong> stage (area where money is flowing)</p>
+<ul>
+<li><p>Digital e-commerce, pet care, IOT manufacturing and real estate brokerage start-ups</p></li>
+<li><p>Sales and electrical infrastructure industry using smart manufacturing technology and artificial intelligence</p></li>
+</ul></li>
+<li><p><strong><em>Pre-A</em></strong> stage (market expansion area)</p>
+<ul>
+<li><p>Customized media and space planning industry using Mobael games and VR</p></li>
+<li><p>Content production and video streaming industry through various media</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="discussion-2" class="slide level2">
+<h2>Discussion</h2>
+<hr>
+<ul>
+<li><p><strong>Knowledge structure analysis</strong> of DT ecosystem</p>
+<ul>
+<li><p>Through data provided by the ‘Innovation Forest’ venture company information platform, we were able to derive the degree of correlation between technologies by analyzing how 419 unique tags (technology/business/product/service) appear simultaneously.</p></li>
+<li><p>Visualize the technology space of the digital transformation technology venture ecosystem based on this correlation information</p></li>
+<li><p>Through the position of each node (tag or technology) in the technology space, which detailed technology in the digital transformation technology space is fused with other technologies to create a new technology, mediates other technology groups, or is applied to multiple technology groups. I was able to find out.</p></li>
+<li><p>Create a separate technology space for each industry classified through topic modeling and confirm that the positions of technologies within it can also be analyzed.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="discussion-3" class="slide level2">
+<h2>Discussion</h2>
+<hr>
+<ul>
+<li><p>Development of investment (VC) attraction prediction model</p>
+<ul>
+<li><p>Industry, Biz-Tech convergence, organization: deriving a framework for three perspectives</p></li>
+<li><p>As a result of training in period T and testing in period T+1, the performance was <u>accuracy of over 70% and investment success rate of 65%</u></p></li>
+</ul></li>
+<li><p>Key factors affecting investment attraction predictions</p>
+<ul>
+<li><p><strong>Organization &gt; Convergence &gt; Industry</strong></p></li>
+<li><p><u>Confirmed that organizational dynamics can be a good signal for investment decisions</u></p></li>
+<li><p>Among the positions of Biz-Tech convergence, <u>the mediation, connection, and proximity centrality of tags owned by a company</u> can also be a decisive factor in deciding investment.</p></li>
+</ul></li>
+<li><p>When to invest</p>
+<ul>
+<li><p>When you get +1 or +2 from 3~4 employees</p></li>
+<li><p>Or, when the organization’s in_ratio is slightly higher than its out_ratio</p></li>
+<li><p>At the same time, companies with high mediation, weighting, and proximity centrality of their tags</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="future-study" class="slide level2">
+<h2>Future study</h2>
+<hr>
+<ul>
+<li><p>Industry Classificaiton</p>
+<ul>
+<li>Comparison of topic models and traditional classification methods</li>
+</ul></li>
+<li><p>Biz-Tech convergence part</p>
+<ul>
+<li><p>Research on the meaning of centrality</p></li>
+<li><p>Find ways to measure factors affecting investment factors more specifically</p></li>
+</ul></li>
+<li><p>Organization factors</p>
+<ul>
+<li>Theoretical discussion on in &amp; out dynamics</li>
+</ul></li>
+</ul>
+</section>
+<section id="finalize-this-talk" class="slide level2">
+<h2>Finalize this talk</h2>
+<p><br></p>
+<h3 id="thanks-for-your-attention">Thanks for your attention</h3>
+<p><br></p>
+<p>You can find this presentation here</p>
+<ul>
+<li><a href="https://changjunlee.com/blogs/posts/11_dt_ecosystem.html/" class="uri">https://changjunlee.com/blogs/posts/11_dt_ecosystem.html/</a></li>
+</ul>
+<p><br></p>
+<h3 id="any-questions-suggestions">Any questions &amp; suggestions?</h3>
+<p><br></p>
+<p><br></p>
+<h3>
+Changjun LEE
+</h3>
+<h4>
+SungKyunKwan University
+</h4>
+<h4>
+School of Convergence (Tech &amp; Culture)
+</h4>
+<p><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:black;overflow:visible;position:relative;"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"></path></svg> &nbsp;<a href="https://changjunlee.com/" class="uri">changjunlee.com</a></p>
+<p><img data-src="img/my_avatar.png" class="absolute" style="top: 370px; left: 1400px; width: 500px; "></p>
+<div class="quarto-auto-generated-content">
+<p><img src="img/HYU_logo_singlecolor_png.png" class="slide-logo"></p>
+<div class="footer footer-default">
+
+</div>
+</div>
+</section>
+    </div>
+  </div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1920,
+
+        height: 1080,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
+    <script id="quarto-html-after-body" type="application/javascript">
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+      const toggleBodyColorMode = (bsSheetEl) => {
+        const mode = bsSheetEl.getAttribute("data-mode");
+        const bodyEl = window.document.querySelector("body");
+        if (mode === "dark") {
+          bodyEl.classList.add("quarto-dark");
+          bodyEl.classList.remove("quarto-light");
+        } else {
+          bodyEl.classList.add("quarto-light");
+          bodyEl.classList.remove("quarto-dark");
+        }
+      }
+      const toggleBodyColorPrimary = () => {
+        const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+        if (bsSheetEl) {
+          toggleBodyColorMode(bsSheetEl);
+        }
+      }
+      toggleBodyColorPrimary();  
+      const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+      tabsets.forEach(function(tabset) {
+        const tabby = new Tabby('#' + tabset.id);
+      });
+      const isCodeAnnotation = (el) => {
+        for (const clz of el.classList) {
+          if (clz.startsWith('code-annotation-')) {                     
+            return true;
+          }
+        }
+        return false;
+      }
+      const clipboard = new window.ClipboardJS('.code-copy-button', {
+        text: function(trigger) {
+          const codeEl = trigger.previousElementSibling.cloneNode(true);
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+      });
+      clipboard.on('success', function(e) {
+        // button target
+        const button = e.trigger;
+        // don't keep focus
+        button.blur();
+        // flash "checked"
+        button.classList.add('code-copy-button-checked');
+        var currentTitle = button.getAttribute("title");
+        button.setAttribute("title", "Copied!");
+        let tooltip;
+        if (window.bootstrap) {
+          button.setAttribute("data-bs-toggle", "tooltip");
+          button.setAttribute("data-bs-placement", "left");
+          button.setAttribute("data-bs-title", "Copied!");
+          tooltip = new bootstrap.Tooltip(button, 
+            { trigger: "manual", 
+              customClass: "code-copy-button-tooltip",
+              offset: [0, -8]});
+          tooltip.show();    
+        }
+        setTimeout(function() {
+          if (tooltip) {
+            tooltip.hide();
+            button.removeAttribute("data-bs-title");
+            button.removeAttribute("data-bs-toggle");
+            button.removeAttribute("data-bs-placement");
+          }
+          button.setAttribute("title", currentTitle);
+          button.classList.remove('code-copy-button-checked');
+        }, 1000);
+        // clear code selection
+        e.clearSelection();
+      });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
+      function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+        const config = {
+          allowHTML: true,
+          maxWidth: 500,
+          delay: 100,
+          arrow: false,
+          appendTo: function(el) {
+              return el.closest('section.slide') || el.parentElement;
+          },
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start',
+        };
+        if (contentFn) {
+          config.content = contentFn;
+        }
+        if (onTriggerFn) {
+          config.onTrigger = onTriggerFn;
+        }
+        if (onUntriggerFn) {
+          config.onUntrigger = onUntriggerFn;
+        }
+          config['offset'] = [0,0];
+          config['maxWidth'] = 700;
+        window.tippy(el, config); 
+      }
+      const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+      for (var i=0; i<noterefs.length; i++) {
+        const ref = noterefs[i];
+        tippyHover(ref, function() {
+          // use id or data attribute instead here
+          let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+          try { href = new URL(href).hash; } catch {}
+          const id = href.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
+        });
+      }
+      const findCites = (el) => {
+        const parentEl = el.parentElement;
+        if (parentEl) {
+          const cites = parentEl.dataset.cites;
+          if (cites) {
+            return {
+              el,
+              cites: cites.split(' ')
+            };
+          } else {
+            return findCites(el.parentElement)
+          }
+        } else {
+          return undefined;
+        }
+      };
+      var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+      for (var i=0; i<bibliorefs.length; i++) {
+        const ref = bibliorefs[i];
+        const citeInfo = findCites(ref);
+        if (citeInfo) {
+          tippyHover(citeInfo.el, function() {
+            var popup = window.document.createElement('div');
+            citeInfo.cites.forEach(function(cite) {
+              var citeDiv = window.document.createElement('div');
+              citeDiv.classList.add('hanging-indent');
+              citeDiv.classList.add('csl-entry');
+              var biblioDiv = window.document.getElementById('ref-' + cite);
+              if (biblioDiv) {
+                citeDiv.innerHTML = biblioDiv.innerHTML;
+              }
+              popup.appendChild(citeDiv);
+            });
+            return popup.innerHTML;
+          });
+        }
+      }
+    });
+    </script>
+    
+
+</body></html>
