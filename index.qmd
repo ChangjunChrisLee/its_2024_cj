@@ -7,7 +7,7 @@ format:
   revealjs:
     theme: ["theme/q-theme.scss"]
     slide-number: c/t
-    logo: "img/HYU_logo_singlecolor_png.png"
+    logo: "img/skku-logo.png"
     # footer: "2023 봄철 3학회 공동 학술대회"
     code-copy: true
     center-title-slide: false
@@ -1374,7 +1374,7 @@ varImp(rf_fit, scale = FALSE) %>%
 
 You can find this presentation here
 
--   <https://changjunlee.com/blogs/posts/11_dt_ecosystem.html/>
+-   <https://changjunchrislee.github.io/its_2024_cj>
 
 <br>
 
